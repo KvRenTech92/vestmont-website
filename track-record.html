@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Track Record — Vestmont</title>
+<meta name="description" content="Selected commercial real estate transactions across multifamily, industrial, hotel, retail, mixed-use, and land." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=116" />
+<style>
+/* Force override — clean cards */
+.deal { background: #fff !important; border: none !important; box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important; }
+.deal-img { filter: saturate(0.85) contrast(1.08) brightness(0.95) sepia(0.06) !important; }
+.deal-tag { color: #8b7355 !important; }
+.deal h3 { color: #1f2937 !important; }
+.deal .deal-amt { color: #1f2937 !important; }
+.deal-meta { color: rgba(31,41,55,0.45) !important; }
+.deal-view-btn { color: #8b7355 !important; }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="page-hero" style="background-image: url('assets/flow%20pics/Wide-angle_photograph_of_a_large_202605110924.jpeg')">
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-inner">
+    <p class="eyebrow light">Portfolio</p>
+    <h1 class="light">Selected transactions.</h1>
+    <p class="lede light">Capital placed, deals closed, sponsors served. Full case studies available on request.</p>
+  </div>
+</section>
+
+<!-- Capital & Advisory Transactions -->
+<section class="section" style="background: var(--bg-2);">
+  <div class="container">
+    <p class="section-eyebrow">Track Record</p>
+    <h2 class="section-title">Capital, advisory, and investment sales.</h2>
+    <div class="filter-bar reveal">
+      <button class="filter active" data-filter="all">Mix</button>
+      <button class="filter" data-filter="multifamily">Multifamily</button>
+      <button class="filter" data-filter="office">Office</button>
+      <button class="filter" data-filter="retail">Retail</button>
+      <button class="filter" data-filter="industrial">Industrial</button>
+      <button class="filter" data-filter="storage">Storage</button>
+      <button class="filter" data-filter="senior">Senior Living</button>
+      <button class="filter" data-filter="hospitality">Hospitality</button>
+      <button class="filter" data-filter="other">Other</button>
+    </div>
+    <div class="portfolio-grid full-portfolio">
+
+      <article class="deal deal-feature" data-cat="hospitality other" onclick="openDealModal('ritz')">
+        <div class="deal-img" style="background-image: url('assets/deal-ritz-pv.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Master-Plan</span>
+          <h3>Ritz Carlton</h3>
+          <p class="deal-amt">$72,955,000</p>
+          <p class="deal-meta">Paradise Valley, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <!-- Ritz Carlton Modal -->
+      <div class="deal-modal-overlay" id="modal-ritz" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/deal-ritz-pv.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Master-Plan</span>
+            <h2>Ritz Carlton Paradise Valley</h2>
+            <p class="deal-amt">$72,955,000</p>
+            <p class="deal-meta">Paradise Valley, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged ±$72.9 million in land &amp; horizontal construction financing of a 122-acre Ritz Carlton master-plan community featuring a Luxury Resort, High-End Retail, Luxury Homes, Condos, and Townhomes. Financing was placed with a bank.</p>
+            <p class="deal-prose">Managing Principal, Kevin Barr arranged the horizontal construction loan on behalf of Five Star Development.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-mcdowell" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/The%20McDowell.jpeg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Advisory · Senior Living</span>
+            <h2>The McDowell</h2>
+            <p class="deal-amt">$49,300,000</p>
+            <p class="deal-meta">Scottsdale, Arizona</p>
+            <p class="deal-prose">Vestmont Inc. provided development advisory services for The McDowell, a senior living community in Scottsdale, Arizona.</p>
+            <p class="deal-disclaimer">Advisory services provided by Vestmont Inc. (ADRE# CO648847000).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-sansavino" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/SSV.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Advisory · Senior Living</span>
+            <h2>San Savino Village</h2>
+            <p class="deal-amt">$42,000,000</p>
+            <p class="deal-meta">Gilbert, Arizona</p>
+            <p class="deal-prose">Vestmont Inc. provided development advisory services for San Savino Village, a senior living community in Gilbert, Arizona.</p>
+            <p class="deal-disclaimer">Advisory services provided by Vestmont Inc. (ADRE# CO648847000).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-apache" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Apache%20Palms.jpeg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Advisory · Apartments</span>
+            <h2>Apache Palms</h2>
+            <p class="deal-amt">$37,200,000</p>
+            <p class="deal-meta">Tempe, Arizona</p>
+            <p class="deal-prose">Vestmont Inc. provided development advisory services for Apache Palms, a multifamily community in Tempe, Arizona.</p>
+            <p class="deal-disclaimer">Advisory services provided by Vestmont Inc. (ADRE# CO648847000).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-lifestorage-sale" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Sale · Storage</span>
+            <h2>Life Storage</h2>
+            <p class="deal-amt">$30,500,000</p>
+            <p class="deal-meta">Gilbert, Arizona</p>
+            <p class="deal-prose">Vestmont Inc. represented the seller in the disposition of a Class A climate-controlled self-storage facility in Gilbert, Arizona.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-kyrene" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/Kyrene%20Village.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Sale · Retail</span>
+            <h2>Kyrene Village</h2>
+            <p class="deal-amt">$18,550,000</p>
+            <p class="deal-meta">Chandler, Arizona</p>
+            <p class="deal-prose">Vestmont Inc. represented the sale of Kyrene Village, a retail center in Chandler, Arizona.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-cotton" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Cotten%20Center.jpeg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Industrial</span>
+            <h2>Cotton Center</h2>
+            <p class="deal-amt">$14,500,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $14.5 million bridge loan for Cotton Flex Center, an industrial property in Phoenix, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-arrowhead" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Arrowhead_edited.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Office</span>
+            <h2>Arrowhead Center</h2>
+            <p class="deal-amt">$14,425,000</p>
+            <p class="deal-meta">Glendale, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $14.4 million permanent loan for Arrowhead Center, a multi-tenant office park in Glendale, Arizona. Financing was placed through CMBS. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-lifestorage-gilbert" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Storage</span>
+            <h2>Life Storage</h2>
+            <p class="deal-amt">$11,500,000</p>
+            <p class="deal-meta">Gilbert, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged an $11.5 million bridge loan for a Class A self-storage facility in Gilbert, Arizona. Financing was placed with a debt fund. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-peoria" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Peoria.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Office</span>
+            <h2>Peoria Office Center</h2>
+            <p class="deal-amt">$10,500,000</p>
+            <p class="deal-meta">Glendale, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $10.5 million permanent loan for Peoria Office Center, a multi-tenant office park in Glendale, Arizona. Financing was placed through CMBS. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-lifestorage-phx" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/DSC09772.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Storage</span>
+            <h2>Life Storage</h2>
+            <p class="deal-amt">$9,730,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $9.7 million construction loan for a self-storage facility in the greater Phoenix area. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-ocotillo" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/The%20Ocotillo.JPG')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>The Ocotillo</h2>
+            <p class="deal-amt">$8,890,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged permanent financing for The Ocotillo, a 173-unit multifamily community in Phoenix, Arizona. Financing was placed through an agency lender. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-rezide-sale" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/rezide_edited_edited.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Sale · Multifamily</span>
+            <h2>Rezide Uptown</h2>
+            <p class="deal-amt">$6,299,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Inc. represented the sale of Rezide Uptown, a 35-unit multifamily property in the Uptown Phoenix submarket.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-eldorado" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/The%20Eldorado.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Advisory · Apartments</span>
+            <h2>The Eldorado</h2>
+            <p class="deal-amt">$6,050,000</p>
+            <p class="deal-meta">Scottsdale, Arizona</p>
+            <p class="deal-prose">Vestmont Inc. provided development advisory services for The Eldorado, a multifamily property in Scottsdale, Arizona.</p>
+            <p class="deal-disclaimer">Advisory services provided by Vestmont Inc. (ADRE# CO648847000).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-eldorado-sale" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/ElDorado%20-%20A%20-%20Cover.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Sale · Multifamily</span>
+            <h2>El Dorado Apt.</h2>
+            <p class="deal-amt">$6,050,000</p>
+            <p class="deal-meta">Scottsdale, Arizona</p>
+            <p class="deal-prose">Vestmont Inc. represented the sale of El Dorado Apartments, a 32-unit multifamily property in Scottsdale, Arizona.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-urban" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/The%20Urban.JPG')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>The Urban</h2>
+            <p class="deal-amt">$6,020,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $6.02 million bridge loan for The Urban, a multifamily property in Phoenix, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-rezide-mid" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Rezide%20Midtown_edited.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Advisory · Apartments</span>
+            <h2>Rezide Midtown</h2>
+            <p class="deal-amt">$6,000,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Inc. provided development advisory services for Rezide Midtown, a multifamily property in the Midtown Phoenix submarket.</p>
+            <p class="deal-disclaimer">Advisory services provided by Vestmont Inc. (ADRE# CO648847000).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-pine" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Pine.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Retail</span>
+            <h2>Pine Parkway Plaza</h2>
+            <p class="deal-amt">$4,900,000</p>
+            <p class="deal-meta">Show Low, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $4.9 million permanent loan for Pine Parkway Plaza, a grocery-anchored retail center in Show Low, Arizona. Financing was placed through CMBS. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-urban-connected" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/C%20UrbanConnected%20Ext%2002.JPG')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>Urban Connected</h2>
+            <p class="deal-amt">$4,100,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $4.1 million bridge loan for Urban Connected, a multifamily property in Phoenix, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-rezide-up" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/rezide_edited_edited.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>Rezide Uptown</h2>
+            <p class="deal-amt">$4,050,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $4.05 million permanent loan for Rezide Uptown, a 35-unit multifamily property in the Uptown Phoenix submarket. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-estancia" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Estancia_edited.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>Estancia</h2>
+            <p class="deal-amt">$3,835,000</p>
+            <p class="deal-meta">Scottsdale, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $3.8 million permanent loan for Estancia, a multifamily property in Scottsdale, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-thrift" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Thrift%20Thrive.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Purchase · Retail</span>
+            <h2>Thrift to Thrive</h2>
+            <p class="deal-amt">$3,500,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Inc. represented the acquisition of Thrift to Thrive, a retail property in Phoenix, Arizona.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-carwash" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/car%20wash.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Carwash</span>
+            <h2>Arizona Car Wash</h2>
+            <p class="deal-amt">$3,265,000</p>
+            <p class="deal-meta">Mesa, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a bridge loan for Arizona Car Wash, a commercial property in Mesa, Arizona. Financing was placed with a private lender. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-safeway" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Screen%20Shot%202022-01-13%20at%202.35.18%20PM.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Retail</span>
+            <h2>Safeway Retail Center</h2>
+            <p class="deal-amt">$3,260,000</p>
+            <p class="deal-meta">Tucson, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $3.26 million bridge loan for a Safeway-anchored retail center in Tucson, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-bethany" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/BG.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>Bethany Gardens</h2>
+            <p class="deal-amt">$3,200,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged financing for Bethany Gardens, a multifamily property in Phoenix, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-macallister-pc" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Mac2.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Private Debt · Apartments</span>
+            <h2>The Macallister</h2>
+            <p class="deal-amt">$3,200,000</p>
+            <p class="deal-meta">Scottsdale, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. provided a $3.2 million private bridge loan for The Macallister, a multifamily property in Scottsdale, Arizona. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-macallister" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Mac2.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>Macallister</h2>
+            <p class="deal-amt">$3,000,000</p>
+            <p class="deal-meta">Scottsdale, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $3.0 million construction loan for The Macallister, a multifamily development in Scottsdale, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-alhambra" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/Alhambra.jpeg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>Alhambra</h2>
+            <p class="deal-amt">$3,000,000</p>
+            <p class="deal-meta">Mesa, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $3.0 million permanent loan for Alhambra, a student housing property near a major university in Mesa, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-grover" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/Grover.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>The Grover</h2>
+            <p class="deal-amt">$2,650,000</p>
+            <p class="deal-meta">Glendale, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged permanent financing for The Grover, a multifamily property in the greater Phoenix area. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-portales" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/C%20Portales%20Ext%2001_edited.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Townhomes</span>
+            <h2>Portales</h2>
+            <p class="deal-amt">$1,900,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $1.89 million bridge loan for Portales, a 13-unit townhome community in the greater Phoenix area. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-lexington" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/2014-07-14%20LexCt%20Pic09.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>Lexington Court</h2>
+            <p class="deal-amt">$1,750,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $1.75 million permanent loan for Lexington Court, a 32-unit multifamily property in Phoenix, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-turney" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Turney1.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>The Turney</h2>
+            <p class="deal-amt">$1,500,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $1.5 million bridge loan for The Turney, a 28-unit multifamily property in Phoenix, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-phxgarden" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/Phoenix%20Gardens.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>Phoenix Garden</h2>
+            <p class="deal-amt">$1,350,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $1.35 million permanent loan for Phoenix Gardens, a 36-unit multifamily property in Phoenix, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-artisan" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/The%20artisan.jpeg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>The Artisan</h2>
+            <p class="deal-amt">$1,200,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $1.2 million construction loan for The Artisan, a mixed-use development in the Roosevelt Row district of Phoenix, Arizona. Financing was placed with a private lender. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-rialto" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Front%20copy.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>Rialto</h2>
+            <p class="deal-amt">$1,115,000</p>
+            <p class="deal-meta">Tempe, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $1.1 million permanent loan for Rialto, a 23-unit multifamily property in Tempe, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-greenway" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/Greenway.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Office</span>
+            <h2>Greenway Center</h2>
+            <p class="deal-amt">$1,000,000</p>
+            <p class="deal-meta">Scottsdale, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $1.0 million permanent loan for Greenway Center, an office property in Scottsdale, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-modal-overlay" id="modal-5thave" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/2014-04-04%20618n5thAve%20Front.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Private Debt · Apartments</span>
+            <h2>5th Ave Village</h2>
+            <p class="deal-amt">$900,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <p class="deal-prose">Vestmont Capital Inc. provided a $900,000 private bridge loan for 5th Ave Village, a 16-unit multifamily property in Phoenix, Arizona. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+      <article class="deal" data-cat="senior" onclick="openDealModal('mcdowell')" style="align-self:end;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/The%20McDowell.jpeg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Advisory · Senior Living</span>
+          <h3>The McDowell</h3>
+          <p class="deal-amt">$49,300,000</p>
+          <p class="deal-meta">Scottsdale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="senior" onclick="openDealModal('sansavino')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/SSV.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Advisory · Senior Living</span>
+          <h3>San Savino Village</h3>
+          <p class="deal-amt">$42,000,000</p>
+          <p class="deal-meta">Gilbert, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('apache')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Apache%20Palms.jpeg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Advisory · Apartments</span>
+          <h3>Apache Palms</h3>
+          <p class="deal-amt">$37,200,000</p>
+          <p class="deal-meta">Tempe, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="storage" onclick="openDealModal('lifestorage-sale')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Sale · Storage</span>
+          <h3>Life Storage</h3>
+          <p class="deal-amt">$30,500,000</p>
+          <p class="deal-meta">Gilbert, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="retail" onclick="openDealModal('kyrene')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/Kyrene%20Village.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Sale · Retail</span>
+          <h3>Kyrene Village</h3>
+          <p class="deal-amt">$18,550,000</p>
+          <p class="deal-meta">Chandler, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="industrial" onclick="openDealModal('cotton')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Cotten%20Center.jpeg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Industrial</span>
+          <h3>Cotton Center</h3>
+          <p class="deal-amt">$14,500,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="office" onclick="openDealModal('arrowhead')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Arrowhead_edited.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Office</span>
+          <h3>Arrowhead Center</h3>
+          <p class="deal-amt">$14,425,000</p>
+          <p class="deal-meta">Glendale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="storage" onclick="openDealModal('lifestorage-gilbert')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Storage</span>
+          <h3>Life Storage</h3>
+          <p class="deal-amt">$11,500,000</p>
+          <p class="deal-meta">Gilbert, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="office" onclick="openDealModal('peoria')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Peoria.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Office</span>
+          <h3>Peoria Office Center</h3>
+          <p class="deal-amt">$10,500,000</p>
+          <p class="deal-meta">Glendale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="storage" onclick="openDealModal('lifestorage-phx')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/DSC09772.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Storage</span>
+          <h3>Life Storage</h3>
+          <p class="deal-amt">$9,730,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('ocotillo')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/The%20Ocotillo.JPG')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>The Ocotillo</h3>
+          <p class="deal-amt">$8,890,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('rezide-sale')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/rezide_edited_edited.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Sale · Multifamily</span>
+          <h3>Rezide Uptown</h3>
+          <p class="deal-amt">$6,299,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('eldorado')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/The%20Eldorado.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Advisory · Apartments</span>
+          <h3>The Eldorado</h3>
+          <p class="deal-amt">$6,050,000</p>
+          <p class="deal-meta">Scottsdale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('eldorado-sale')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/ElDorado%20-%20A%20-%20Cover.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Sale · Multifamily</span>
+          <h3>El Dorado Apt.</h3>
+          <p class="deal-amt">$6,050,000</p>
+          <p class="deal-meta">Scottsdale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('urban')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/The%20Urban.JPG')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>The Urban</h3>
+          <p class="deal-amt">$6,020,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('rezide-mid')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Rezide%20Midtown_edited.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Advisory · Apartments</span>
+          <h3>Rezide Midtown</h3>
+          <p class="deal-amt">$6,000,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="retail" onclick="openDealModal('pine')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Pine.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Retail</span>
+          <h3>Pine Parkway Plaza</h3>
+          <p class="deal-amt">$4,900,000</p>
+          <p class="deal-meta">Show Low, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('urban-connected')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/C%20UrbanConnected%20Ext%2002.JPG')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>Urban Connected</h3>
+          <p class="deal-amt">$4,100,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('rezide-up')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/rezide_edited_edited.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>Rezide Uptown</h3>
+          <p class="deal-amt">$4,050,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('estancia')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Estancia_edited.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>Estancia</h3>
+          <p class="deal-amt">$3,835,000</p>
+          <p class="deal-meta">Scottsdale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="retail" onclick="openDealModal('thrift')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Thrift%20Thrive.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Purchase · Retail</span>
+          <h3>Thrift to Thrive</h3>
+          <p class="deal-amt">$3,500,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="other" onclick="openDealModal('carwash')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/car%20wash.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Carwash</span>
+          <h3>Arizona Car Wash</h3>
+          <p class="deal-amt">$3,265,000</p>
+          <p class="deal-meta">Mesa, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="retail" onclick="openDealModal('safeway')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Screen%20Shot%202022-01-13%20at%202.35.18%20PM.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Retail</span>
+          <h3>Safeway Retail Center</h3>
+          <p class="deal-amt">$3,260,000</p>
+          <p class="deal-meta">Tucson, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('bethany')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/BG.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>Bethany Gardens</h3>
+          <p class="deal-amt">$3,200,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('macallister-pc')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Mac2.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Private Debt · Apartments</span>
+          <h3>The Macallister</h3>
+          <p class="deal-amt">$3,200,000</p>
+          <p class="deal-meta">Scottsdale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('macallister')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Mac2.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>Macallister</h3>
+          <p class="deal-amt">$3,000,000</p>
+          <p class="deal-meta">Scottsdale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('alhambra')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/Alhambra.jpeg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>Alhambra</h3>
+          <p class="deal-amt">$3,000,000</p>
+          <p class="deal-meta">Mesa, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('grover')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/Grover.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>The Grover</h3>
+          <p class="deal-amt">$2,650,000</p>
+          <p class="deal-meta">Glendale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('portales')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/C%20Portales%20Ext%2001_edited.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Townhomes</span>
+          <h3>Portales</h3>
+          <p class="deal-amt">$1,900,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('lexington')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/2014-07-14%20LexCt%20Pic09.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>Lexington Court</h3>
+          <p class="deal-amt">$1,750,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('turney')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Turney1.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>The Turney</h3>
+          <p class="deal-amt">$1,500,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('phxgarden')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/Phoenix%20Gardens.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>Phoenix Garden</h3>
+          <p class="deal-amt">$1,350,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('artisan')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/The%20artisan.jpeg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>The Artisan</h3>
+          <p class="deal-amt">$1,200,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('rialto')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Front%20copy.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>Rialto</h3>
+          <p class="deal-amt">$1,115,000</p>
+          <p class="deal-meta">Tempe, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="office" onclick="openDealModal('greenway')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/Greenway.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Office</span>
+          <h3>Greenway Center</h3>
+          <p class="deal-amt">$1,000,000</p>
+          <p class="deal-meta">Scottsdale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('5thave')">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/2014-04-04%20618n5thAve%20Front.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Private Debt · Apartments</span>
+          <h3>5th Ave Village</h3>
+          <p class="deal-amt">$900,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="section section-cta">
+  <div class="container cta-inner reveal">
+    <h2>Want the full deal book?</h2>
+    <p>Contact us for case studies, references, and detail on prior closings.</p>
+    <a href="contact.html" class="btn btn-primary">Request Case Studies</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="partials.js?v=12" defer></script>
+<script>
+  function openDealModal(id) {
+    var modal = document.getElementById('modal-' + id);
+    if (!modal) return;
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDealModal() {
+    document.querySelectorAll('.deal-modal-overlay').forEach(function(m) {
+      m.classList.remove('is-open');
+    });
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeDealModal();
+  });
+  function showDeals(f) {
+    document.querySelectorAll('.deal').forEach(d => {
+      if (f === 'all' || d.dataset.cat.split(' ').indexOf(f) !== -1) {
+        d.style.display = '';
+        d.style.opacity = '0';
+        d.style.transform = 'translateY(16px)';
+        requestAnimationFrame(() => {
+          d.style.transition = 'opacity 0.4s, transform 0.4s';
+          d.style.opacity = '1';
+          d.style.transform = 'translateY(0)';
+        });
+      } else {
+        d.style.display = 'none';
+      }
+    });
+  }
+  document.querySelectorAll('.filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      showDeals(btn.dataset.filter);
+    });
+  });
+  showDeals('all');
+</script>
+</body>
+</html>

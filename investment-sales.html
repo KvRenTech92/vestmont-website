@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Investment Sales — Vestmont</title>
+<meta name="description" content="Investment sales brokerage across multifamily, industrial, hotel, retail, mixed-use, and land. Arizona-rooted, nationally relevant." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link rel="stylesheet" href="styles.css?v=116" />
+<style>
+.deal { background: #fff !important; border: none !important; box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important; }
+.deal-img { filter: saturate(0.85) contrast(1.08) brightness(0.95) sepia(0.06) !important; }
+.deal-tag { color: #8b7355 !important; }
+.deal h3 { color: #1f2937 !important; }
+.deal .deal-amt { color: #1f2937 !important; }
+.deal-meta { color: rgba(31,41,55,0.45) !important; }
+.deal-view-btn { color: #8b7355 !important; }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="page-hero" style="background-image: url('assets/flow pics/Wide_aerial_photograph_of_a_202605081338.jpeg')">
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-inner">
+    <p class="eyebrow light">Investment Sales</p>
+    <h1 class="light">Brokerage with skin in the game.</h1>
+    <p class="lede light">We list deals we'd buy ourselves. Every assignment starts with a full underwriting, a defensible BOV, and a marketing plan tailored to the asset.</p>
+  </div>
+</section>
+
+<section class="section service-detail reveal">
+  <div class="container">
+    <div style="max-width: 680px; margin-bottom: 56px;">
+      <p class="section-eyebrow">How We List</p>
+      <h2>The work happens before the OM ships.</h2>
+      <p class="prose">Most listings fail because the underwriting isn't real. We model the deal as a buyer would — debt sizing, IRR sensitivity, exit cap reasonability — then build the marketing plan around what's actually defensible. Buyers respect the BOV. Lenders close on the first quote.</p>
+    </div>
+    <div class="brokerage-services reveal-stagger">
+      <div class="brok-svc">
+        <span class="brok-svc-num">01</span>
+        <h3>Buyer Representation</h3>
+        <p>Sourcing, underwriting, and execution for acquirers across every major asset class.</p>
+      </div>
+      <div class="brok-svc">
+        <span class="brok-svc-num">02</span>
+        <h3>Seller Representation</h3>
+        <p>Buyer-grade BOV, targeted marketing, and full-cycle disposition execution.</p>
+      </div>
+      <div class="brok-svc">
+        <span class="brok-svc-num">03</span>
+        <h3>Landlord &amp; Tenant Leasing</h3>
+        <p>Strategic leasing across retail, industrial, office, and mixed-use assets.</p>
+      </div>
+      <div class="brok-svc">
+        <span class="brok-svc-num">04</span>
+        <h3>Asset Management</h3>
+        <p>Portfolio-level oversight focused on NOI growth, capital planning, and exit readiness.</p>
+      </div>
+      <div class="brok-svc">
+        <span class="brok-svc-num">05</span>
+        <h3>Property Management</h3>
+        <p>Day-to-day operations, tenant relations, and lease administration.</p>
+      </div>
+      <div class="brok-svc">
+        <span class="brok-svc-num">06</span>
+        <h3>All Property Types</h3>
+        <p>Multifamily, retail, industrial, office, hospitality, mixed-use, self-storage, senior &amp; student housing, and land.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.brokerage-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.brokerage-services > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+}
+.brokerage-services.is-visible > *:nth-child(1) { transition-delay: 0s; }
+.brokerage-services.is-visible > *:nth-child(2) { transition-delay: 0.1s; }
+.brokerage-services.is-visible > *:nth-child(3) { transition-delay: 0.2s; }
+.brokerage-services.is-visible > *:nth-child(4) { transition-delay: 0.3s; }
+.brokerage-services.is-visible > *:nth-child(5) { transition-delay: 0.4s; }
+.brokerage-services.is-visible > *:nth-child(6) { transition-delay: 0.5s; }
+.brokerage-services.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+.brok-svc {
+  padding: 32px 28px;
+  background: var(--bg-2);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: all 0.35s var(--ease);
+}
+.brok-svc:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  border-color: rgba(139,115,85,0.25);
+}
+.brok-svc-num {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 0.85rem;
+  color: var(--brand-light);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 14px;
+}
+.brok-svc h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--brand-ink);
+  margin-bottom: 10px;
+}
+.brok-svc p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+@media (max-width: 900px) {
+  .brokerage-services { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .brokerage-services { grid-template-columns: 1fr; gap: 16px; }
+  .brok-svc { padding: 24px 20px; }
+}
+</style>
+
+<section class="section section-dark">
+  <div class="container reveal">
+    <p class="section-eyebrow light">Process</p>
+    <h2 class="section-title light">From engagement to close.</h2>
+    <div class="process-grid reveal-stagger">
+      <div class="step step-dark"><span class="step-num">01</span><h3>Underwriting</h3><p>Full buyer-grade model before we accept the listing. Real assumptions. Real numbers.</p></div>
+      <div class="step step-dark"><span class="step-num">02</span><h3>BOV & Pricing</h3><p>Defensible price guidance based on comps and what real buyers will pay today.</p></div>
+      <div class="step step-dark"><span class="step-num">03</span><h3>Marketing</h3><p>Targeted buyer pool. Quality OM. Direct outreach to the right capital — not a CoStar blast.</p></div>
+      <div class="step step-dark"><span class="step-num">04</span><h3>Close</h3><p>We drive the diligence calendar. Hold the line on terms. Get to recordation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="container">
+    <div class="portfolio-head">
+      <div>
+        <p class="section-eyebrow">Selected Transactions</p>
+        <h2>Recent sales.</h2>
+      </div>
+      <a href="track-record.html" class="btn btn-ghost">See More →</a>
+    </div>
+    <div class="portfolio-grid reveal-stagger" style="grid-template-columns: repeat(4, 1fr);">
+      <article class="deal" onclick="openDealModal('cotton-buy')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Cotten%20Center.jpeg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Purchase · Industrial</span>
+          <h3>Cotton Flex Center</h3>
+          <p class="deal-amt">$29,200,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+      <article class="deal" onclick="openDealModal('kyrene')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/Kyrene%20Village.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Sale · Retail</span>
+          <h3>Kyrene Village</h3>
+          <p class="deal-amt">$18,550,000</p>
+          <p class="deal-meta">Chandler, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+      <article class="deal" onclick="openDealModal('lifestorage-sale')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Sale · Storage</span>
+          <h3>Life Storage</h3>
+          <p class="deal-amt">$30,500,000</p>
+          <p class="deal-meta">Gilbert, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+      <article class="deal" onclick="openDealModal('rezide-sale')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/rezide_edited_edited.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Sale · Multifamily</span>
+          <h3>Rezide Uptown</h3>
+          <p class="deal-amt">$6,299,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Deal Modals (outside reveal-stagger to prevent auto-trigger on scroll) -->
+<div class="deal-modal-overlay" id="modal-cotton-buy" onclick="if(event.target===this)closeDealModal()">
+  <div class="deal-modal">
+    <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Cotten%20Center.jpeg')"></div>
+    <div class="deal-modal-body">
+      <span class="deal-tag">Purchase · Industrial</span>
+      <h2>Cotton Flex Center</h2>
+      <p class="deal-amt">$29,200,000</p>
+      <p class="deal-meta">4625 &amp; 4675 E. Cotton Center Blvd., Phoenix, Arizona</p>
+      <table class="deal-details"><tr><td>Property Type</td><td>Industrial</td></tr><tr><td>Transaction Type</td><td>Buyer Representation</td></tr></table>
+      <p class="deal-prose">Vestmont Inc. represented the buyer in the acquisition of Cotton Flex Center, a multi-building industrial property in Phoenix, Arizona.</p>
+      <p class="deal-disclaimer">Brokerage services conducted exclusively by Vestmont Inc. (ADRE# CO648847000).</p>
+    </div>
+  </div>
+</div>
+<div class="deal-modal-overlay" id="modal-kyrene" onclick="if(event.target===this)closeDealModal()">
+  <div class="deal-modal">
+    <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/Kyrene%20Village.png')"></div>
+    <div class="deal-modal-body">
+      <span class="deal-tag">Sale · Retail</span>
+      <h2>Kyrene Village</h2>
+      <p class="deal-amt">$18,550,000</p>
+      <p class="deal-meta">6045–6225 W. Chandler Blvd., Chandler, Arizona</p>
+      <table class="deal-details"><tr><td>Property Type</td><td>Retail Center</td></tr><tr><td>Transaction Type</td><td>Cooperation Listing</td></tr></table>
+      <p class="deal-prose">Vestmont Inc. represented the seller in the disposition of Kyrene Village, a retail center in Chandler, Arizona.</p>
+      <p class="deal-disclaimer">Brokerage services conducted exclusively by Vestmont Inc. (ADRE# CO648847000).</p>
+    </div>
+  </div>
+</div>
+<div class="deal-modal-overlay" id="modal-lifestorage-sale" onclick="if(event.target===this)closeDealModal()">
+  <div class="deal-modal">
+    <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+    <div class="deal-modal-body">
+      <span class="deal-tag">Sale · Storage</span>
+      <h2>Life Storage</h2>
+      <p class="deal-amt">$30,500,000</p>
+      <p class="deal-meta">892 S. Higley Rd., Gilbert, Arizona</p>
+      <table class="deal-details"><tr><td>Property Type</td><td>Self-Storage</td></tr><tr><td>Transaction Type</td><td>Sale Listing</td></tr></table>
+      <p class="deal-prose">Vestmont Inc. represented the seller in the disposition of a Class A climate-controlled self-storage facility in Gilbert, Arizona.</p>
+      <p class="deal-disclaimer">Brokerage services conducted exclusively by Vestmont Inc. (ADRE# CO648847000).</p>
+    </div>
+  </div>
+</div>
+<div class="deal-modal-overlay" id="modal-rezide-sale" onclick="if(event.target===this)closeDealModal()">
+  <div class="deal-modal">
+    <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/rezide_edited_edited.jpg')"></div>
+    <div class="deal-modal-body">
+      <span class="deal-tag">Sale · Multifamily</span>
+      <h2>Rezide Uptown</h2>
+      <p class="deal-amt">$6,299,000</p>
+      <p class="deal-meta">1420 E. Bethany Home Road, Phoenix, Arizona</p>
+      <table class="deal-details"><tr><td>Property Type</td><td>Multifamily · 35 Units</td></tr><tr><td>Transaction Type</td><td>Sale Listing</td></tr></table>
+      <p class="deal-prose">Vestmont Inc. represented the seller in the disposition of Rezide Uptown, a 35-unit multifamily property in the Uptown Phoenix submarket.</p>
+      <p class="deal-disclaimer">Brokerage services conducted exclusively by Vestmont Inc. (ADRE# CO648847000).</p>
+    </div>
+  </div>
+</div>
+
+<section class="section section-cta">
+  <div class="container cta-inner reveal">
+    <h2>Considering a sale?</h2>
+    <p>Send us the asset details and we'll come back with a free, no-obligation BOV.</p>
+    <a href="start-a-deal.html" class="btn btn-primary">Request a BOV</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="partials.js?v=12" defer></script>
+<script>
+function openDealModal(id){var m=document.getElementById('modal-'+id);if(!m)return;m.classList.add('is-open');document.body.style.overflow='hidden';}
+function closeDealModal(){document.querySelectorAll('.deal-modal-overlay').forEach(function(m){m.classList.remove('is-open');});document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDealModal();});
+</script>
+</body>
+</html>

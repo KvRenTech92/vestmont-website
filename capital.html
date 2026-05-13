@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capital Markets — Vestmont</title>
+<meta name="description" content="Debt and equity placement for commercial real estate. Acquisition, construction, bridge, and permanent financing across multifamily, retail, industrial, hospitality, and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link rel="stylesheet" href="styles.css?v=116" />
+<style>
+.deal { background: #fff !important; border: none !important; box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important; }
+.deal-img { filter: saturate(0.85) contrast(1.08) brightness(0.95) sepia(0.06) !important; }
+.deal-tag { color: #8b7355 !important; }
+.deal h3 { color: #1f2937 !important; }
+.deal .deal-amt { color: #1f2937 !important; }
+.deal-meta { color: rgba(31,41,55,0.45) !important; }
+.deal-view-btn { color: #8b7355 !important; }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="page-hero" style="background-image: url('assets/flow pics/Aerial_photograph_of_a_modern_202605081335.jpeg')">
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-inner">
+    <p class="eyebrow light">Capital Markets</p>
+    <h1 class="light">Financial solutions across the entire capital stack.</h1>
+    <p class="lede light">Since 2013, Vestmont Capital has served as a direct lender and placement agent across banks, debt funds, life companies, agency, CMBS, and private credit. We size, package, and place debt and equity capital for development, acquisition, and refinancing.</p>
+  </div>
+</section>
+
+<section class="section section-stats reveal">
+  <div class="container stats-row reveal-stagger">
+    <div class="stat"><span class="stat-num" data-count="2000000000" data-from="1" data-prefix="$" data-suffix="+" data-format="dollar">$1</span><span class="stat-label">Capital &amp; advisory transactions</span></div>
+    <div class="stat"><span class="stat-num" data-count="223" data-suffix="+">1</span><span class="stat-label">Transactions</span></div>
+    <div class="stat"><span class="stat-num" data-count="25" data-suffix="+">1</span><span class="stat-label">Years of experience</span></div>
+  </div>
+</section>
+
+<!-- Property Types We Finance -->
+<section class="section section-dark">
+  <div class="container reveal">
+    <p class="section-eyebrow light">Property Types</p>
+    <h2 class="section-title light">We finance every major asset class.</h2>
+    <p class="section-lede" style="color: rgba(255,255,255,0.68); margin-bottom: 48px;">From garden-style multifamily to ground-up hospitality, our capital relationships cover the full spectrum of commercial real estate.</p>
+    <div class="property-types-grid reveal-stagger">
+      <div class="prop-type">
+        <h3>Multifamily</h3>
+        <p>Garden-style, mid-rise, high-rise, workforce, and luxury. Acquisition, refi, construction, and value-add.</p>
+      </div>
+      <div class="prop-type">
+        <h3>Retail</h3>
+        <p>Grocery-anchored, power center, strip, NNN, and mixed-use retail. Acquisition and refinance.</p>
+      </div>
+      <div class="prop-type">
+        <h3>Industrial</h3>
+        <p>Warehouse, distribution, flex, small-bay, and last-mile. Acquisition, construction, and sale-leaseback.</p>
+      </div>
+      <div class="prop-type">
+        <h3>Office</h3>
+        <p>Class A and B, suburban and CBD, medical office, and owner-occupied. Permanent and bridge.</p>
+      </div>
+      <div class="prop-type">
+        <h3>Hospitality</h3>
+        <p>Select-service, full-service, extended-stay, and resort. Ground-up construction, acquisition, and PIP renovation.</p>
+      </div>
+      <div class="prop-type">
+        <h3>Mixed-Use</h3>
+        <p>Vertical and horizontal mixed-use, master-planned communities, live-work-play developments.</p>
+      </div>
+      <div class="prop-type">
+        <h3>Self-Storage</h3>
+        <p>Class A climate-controlled, conversion, and ground-up. Acquisition, construction, and stabilized refi.</p>
+      </div>
+      <div class="prop-type">
+        <h3>Senior Housing</h3>
+        <p>Independent living, assisted living, memory care, and CCRC. Acquisition and construction financing.</p>
+      </div>
+      <div class="prop-type">
+        <h3>Student Housing</h3>
+        <p>Purpose-built and university-adjacent. Acquisition, refi, and development.</p>
+      </div>
+      <div class="prop-type">
+        <h3>Energy</h3>
+        <p>Solar, wind, and clean energy infrastructure. Project finance and construction lending.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.property-types-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 8px;
+}
+.prop-type {
+  padding: 32px 24px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
+  transition: all 0.35s var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+.prop-type::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--brand-light);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s var(--ease);
+}
+.prop-type:hover {
+  border-color: rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.05);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+.prop-type:hover::before { transform: scaleX(1); }
+.prop-type h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.prop-type p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.55;
+}
+@media (max-width: 1100px) {
+  .property-types-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 700px) {
+  .property-types-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .property-types-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<!-- Two Paths -->
+<section class="section reveal">
+  <div class="container">
+    <div style="max-width: 680px; margin-bottom: 56px;">
+      <p class="section-eyebrow">How We Work</p>
+      <h2>Three ways we execute.</h2>
+      <p class="prose">Every assignment starts with our own underwriting. We size the debt, sensitivity-test the assumptions, and identify the right capital structure. Then we execute — as the direct lender, through our institutional lending network, or by sourcing the right equity partner.</p>
+    </div>
+    <div class="two-paths reveal-stagger">
+      <div class="path-card">
+        <span class="path-num">01</span>
+        <h3>Direct Lending</h3>
+        <p class="path-headline">We are the lender.</p>
+        <p>When speed and certainty matter, we lend directly. Bridge, construction, and transitional capital with fast closings and flexible terms — $1M to $25M+, 6 to 36 months.</p>
+        <ul class="path-highlights">
+          <li>Fund in as little as 10 days</li>
+          <li>Interest-only, no prepayment penalty</li>
+          <li>All commercial property types</li>
+        </ul>
+        <a href="#direct-lending" class="path-link">See Loan Terms ↓</a>
+      </div>
+      <div class="path-card">
+        <span class="path-num">02</span>
+        <h3>Capital Placement</h3>
+        <p class="path-headline">We place your deal with the right lender.</p>
+        <p>For bank, agency, CMBS, life company, and institutional capital, we underwrite your deal and leverage direct relationships across 300+ capital sources to secure the best execution. $2M to $500M+.</p>
+        <ul class="path-highlights">
+          <li>Debt and mezzanine placement</li>
+          <li>Banks, agency, life co, CMBS, debt funds</li>
+          <li>Construction, bridge, and permanent</li>
+        </ul>
+        <a href="#capital-sources" class="path-link">See Capital Sources ↓</a>
+      </div>
+      <div class="path-card">
+        <span class="path-num">03</span>
+        <h3>Equity Placement</h3>
+        <p class="path-headline">We source the right equity partner.</p>
+        <p>JV equity, preferred equity, co-GP, and LP capital for acquisitions, development, and recapitalizations. We structure the partnership and connect you with domestic and international equity sources.</p>
+        <ul class="path-highlights">
+          <li>Joint venture and LP equity</li>
+          <li>Preferred equity and mezzanine</li>
+          <li>Co-GP and programmatic structures</li>
+        </ul>
+        <a href="#equity" class="path-link">Learn More ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.two-paths {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.two-paths > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+}
+.two-paths.is-visible > *:nth-child(1) { transition-delay: 0s; }
+.two-paths.is-visible > *:nth-child(2) { transition-delay: 0.15s; }
+.two-paths.is-visible > *:nth-child(3) { transition-delay: 0.3s; }
+.two-paths.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+.path-card {
+  padding: 48px 40px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-2);
+  transition: all 0.35s var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+.path-card::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--brand-light);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s var(--ease);
+}
+.path-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
+.path-card:hover::before { transform: scaleX(1); }
+.path-card-dark {
+  background: #e8ecf1;
+  border-color: rgba(0,0,0,0.06);
+}
+.path-card-dark h3 { color: var(--brand-ink) !important; }
+.path-card-dark .path-headline { color: var(--brand-ink); }
+.path-card-dark p { color: var(--muted); }
+.path-card-dark .path-highlights li { color: var(--muted); }
+.path-card-dark .path-highlights li::before { color: var(--brand); }
+.path-card-dark .path-link { color: var(--brand); }
+.path-card-dark:hover { box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
+.path-num {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 0.85rem;
+  color: var(--brand-light);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 16px;
+}
+.path-card h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--brand-ink);
+  margin-bottom: 8px;
+}
+.path-headline {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--brand-ink);
+  margin-bottom: 16px;
+}
+.path-card > p:not(.path-headline) {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.path-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+.path-highlights li {
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+}
+.path-highlights li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--brand);
+  font-weight: 600;
+}
+.path-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brand);
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+.path-link:hover { text-decoration: underline; }
+@media (max-width: 1000px) {
+  .two-paths { grid-template-columns: 1fr; }
+  .path-card { padding: 36px 28px; }
+}
+</style>
+
+<!-- Private Lending -->
+<section id="direct-lending" class="section section-dark">
+  <div class="container reveal">
+    <p class="section-eyebrow light">Direct Lending</p>
+    <h2 class="section-title light">We are the lender.</h2>
+    <p class="section-lede" style="color: rgba(255,255,255,0.68); margin-bottom: 48px;">$2M to $25M in senior-secured bridge and construction capital. You deal directly with us — one point of contact, fast decisions, and loan terms built around your deal.</p>
+    <div class="loan-terms-grid reveal-stagger">
+      <div class="loan-term">
+        <h4>Loan Size</h4>
+        <p>$2,000,000 – $25,000,000</p>
+      </div>
+      <div class="loan-term">
+        <h4>Interest Rate</h4>
+        <p>8.99% — 11.99%</p>
+      </div>
+      <div class="loan-term">
+        <h4>Fees</h4>
+        <p>1% – 3%</p>
+      </div>
+      <div class="loan-term">
+        <h4>Terms</h4>
+        <p>3 – 36 Months</p>
+      </div>
+      <div class="loan-term">
+        <h4>Property Types</h4>
+        <p>All Commercial Property Types</p>
+      </div>
+      <div class="loan-term">
+        <h4>Monthly Payment</h4>
+        <p>Interest-Only</p>
+      </div>
+      <div class="loan-term">
+        <h4>Loan to Value</h4>
+        <p>Up to 75%</p>
+      </div>
+      <div class="loan-term">
+        <h4>Loan to Cost</h4>
+        <p>Up to 85%</p>
+      </div>
+      <div class="loan-term">
+        <h4>Recourse</h4>
+        <p>Recourse and Non-Recourse</p>
+      </div>
+      <div class="loan-term">
+        <h4>Security Position</h4>
+        <p>First Deed of Trust</p>
+      </div>
+      <div class="loan-term">
+        <h4>Amortization</h4>
+        <p>Interest-Only</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.loan-terms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.loan-term {
+  padding: 28px 24px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  transition: all 0.35s var(--ease);
+}
+.loan-term:hover {
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-3px);
+}
+.loan-term h4 {
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--brand-light);
+  margin-bottom: 8px;
+}
+.loan-term p {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.4;
+}
+@media (max-width: 1000px) {
+  .loan-terms-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 700px) {
+  .loan-terms-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .loan-terms-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<!-- Capital Sources -->
+<section id="capital-sources" class="section" style="background: var(--bg-2);">
+  <div class="container reveal">
+    <p class="section-eyebrow">Capital Sources</p>
+    <h2 class="section-title">A relationship-driven platform.</h2>
+    <p class="section-lede">We don't run brokered RFPs. Every loan we place is anchored in a direct relationship — and every relationship was earned over years of clean closings.</p>
+    <div class="markets-grid reveal-stagger">
+      <div class="market" style="background:#fff;"><span class="market-tag" style="color:var(--brand);border-color:rgba(107,114,128,0.3);">Banks</span><h3 style="color:var(--brand-ink);">Regional &amp; National</h3><p style="color:var(--muted);">Bridge, construction, and balance-sheet permanent debt.</p></div>
+      <div class="market" style="background:#fff;"><span class="market-tag" style="color:var(--brand);border-color:rgba(107,114,128,0.3);">Agency</span><h3 style="color:var(--brand-ink);">Fannie / Freddie / HUD</h3><p style="color:var(--muted);">Multifamily long-term fixed-rate financing.</p></div>
+      <div class="market" style="background:#fff;"><span class="market-tag" style="color:var(--brand);border-color:rgba(107,114,128,0.3);">Life Co</span><h3 style="color:var(--brand-ink);">Insurance Companies</h3><p style="color:var(--muted);">Long-duration fixed-rate debt for institutional-quality assets.</p></div>
+      <div class="market" style="background:#fff;"><span class="market-tag" style="color:var(--brand);border-color:rgba(107,114,128,0.3);">Debt Funds</span><h3 style="color:var(--brand-ink);">Private Credit</h3><p style="color:var(--muted);">Bridge, mezz, and high-leverage transitional capital.</p></div>
+      <div class="market" style="background:#fff;"><span class="market-tag" style="color:var(--brand);border-color:rgba(107,114,128,0.3);">CMBS</span><h3 style="color:var(--brand-ink);">Conduit Lending</h3><p style="color:var(--muted);">Non-recourse, fixed-rate securitized debt for stabilized assets.</p></div>
+      <div class="market" style="background:#fff;"><span class="market-tag" style="color:var(--brand);border-color:rgba(107,114,128,0.3);">Equity</span><h3 style="color:var(--brand-ink);">JV &amp; LP Capital</h3><p style="color:var(--muted);">Institutional, family office, and HNW equity for development and acquisition.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Equity Placement -->
+<section id="equity" class="section section-dark">
+  <div class="container reveal">
+    <p class="section-eyebrow light">Equity Placement</p>
+    <h2 class="section-title light">The right partner changes the deal.</h2>
+    <p class="section-lede" style="color: rgba(255,255,255,0.68); margin-bottom: 48px;">Sourcing equity is about more than filling a gap in the capital stack. It's about finding a partner whose timeline, risk tolerance, and return expectations align with yours. We structure the partnership and manage the process from LOI to close.</p>
+    <div class="equity-grid reveal-stagger">
+      <div class="equity-type">
+        <span class="equity-tag">JV Equity</span>
+        <h3>Joint Ventures</h3>
+        <p>Institutional, family office, and private capital partners for development, acquisition, and value-add. We structure the promote, negotiate the operating agreement, and align interests.</p>
+      </div>
+      <div class="equity-type">
+        <span class="equity-tag">Preferred Equity</span>
+        <h3>Pref &amp; Mezzanine</h3>
+        <p>Fill the gap between senior debt and common equity. Preferred equity and mezzanine capital for recapitalizations, acquisitions, and development where additional leverage is needed.</p>
+      </div>
+      <div class="equity-type">
+        <span class="equity-tag">Co-GP</span>
+        <h3>Co-GP Capital</h3>
+        <p>For sponsors who need to scale their GP commitment. We connect operators with co-GP capital providers who contribute equity alongside the sponsor's investment.</p>
+      </div>
+      <div class="equity-type">
+        <span class="equity-tag">LP Capital</span>
+        <h3>Limited Partners</h3>
+        <p>Discretionary and non-discretionary LP equity from institutional investors, pension funds, endowments, and sovereign wealth for programmatic and one-off opportunities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.equity-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.equity-grid > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+}
+.equity-grid.is-visible > *:nth-child(1) { transition-delay: 0s; }
+.equity-grid.is-visible > *:nth-child(2) { transition-delay: 0.12s; }
+.equity-grid.is-visible > *:nth-child(3) { transition-delay: 0.24s; }
+.equity-grid.is-visible > *:nth-child(4) { transition-delay: 0.36s; }
+.equity-grid.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+.equity-type {
+  padding: 36px 28px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  transition: all 0.35s var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+.equity-type::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--brand-light);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s var(--ease);
+}
+.equity-type:hover {
+  border-color: rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.05);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+.equity-type:hover::before { transform: scaleX(1); }
+.equity-tag {
+  display: inline-block;
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--brand-light);
+  border: 1px solid rgba(139,115,85,0.3);
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin-bottom: 16px;
+}
+.equity-type h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.equity-type p {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.6;
+}
+@media (max-width: 1000px) {
+  .equity-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .equity-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<!-- Selected Transactions -->
+<section class="section reveal">
+  <div class="container">
+    <div class="portfolio-head">
+      <div>
+        <p class="section-eyebrow">Selected Transactions</p>
+        <h2>Recent capital placements.</h2>
+      </div>
+      <a href="track-record.html" class="btn btn-ghost">See More →</a>
+    </div>
+    <div class="portfolio-grid reveal-stagger" style="grid-template-columns: repeat(3, 1fr);">
+      <article class="deal" onclick="openDealModal('ritz')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/deal-ritz-pv.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Master-Plan</span>
+          <h3>Ritz Carlton</h3>
+          <p class="deal-amt">$72,955,000</p>
+          <p class="deal-meta">Paradise Valley, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+      <article class="deal" onclick="openDealModal('cotton')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Cotten%20Center.jpeg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Industrial</span>
+          <h3>Cotton Center</h3>
+          <p class="deal-amt">$14,500,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+      <article class="deal" onclick="openDealModal('arrowhead')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Arrowhead_edited.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Office</span>
+          <h3>Arrowhead Center</h3>
+          <p class="deal-amt">$14,425,000</p>
+          <p class="deal-meta">Glendale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+      <article class="deal" onclick="openDealModal('lifestorage-gilbert')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Storage</span>
+          <h3>Life Storage</h3>
+          <p class="deal-amt">$11,500,000</p>
+          <p class="deal-meta">Gilbert, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+      <article class="deal" onclick="openDealModal('macallister-pc')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Mac2.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Private Debt · Apartments</span>
+          <h3>The Macallister</h3>
+          <p class="deal-amt">$3,200,000</p>
+          <p class="deal-meta">Scottsdale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+      <article class="deal" onclick="openDealModal('urban')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/The%20Urban.JPG')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>The Urban</h3>
+          <p class="deal-amt">$6,020,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Deal Modals -->
+<div class="deal-modal-overlay" id="modal-ritz" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/deal-ritz-pv.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Master-Plan</span>
+            <h2>Ritz Carlton Paradise Valley</h2>
+            <p class="deal-amt">$72,955,000</p>
+            <p class="deal-meta">Paradise Valley, Arizona</p>
+            <table class="deal-details"><tr><td>Property Type</td><td>Mixed-Use Master-Plan</td></tr><tr><td>Loan Type</td><td>Construction / Bridge</td></tr><tr><td>Lender Type</td><td>Bank</td></tr></table>
+            <p class="deal-prose">Vestmont Capital Inc. arranged ±$72.9 million in land &amp; horizontal construction financing of a 122-acre Ritz Carlton master-plan community featuring a Luxury Resort, High-End Retail, Luxury Homes, Condos, and Townhomes. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+      <div class="deal-modal-overlay" id="modal-cotton" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Cotten%20Center.jpeg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Industrial</span>
+            <h2>Cotton Center</h2>
+            <p class="deal-amt">$14,500,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <table class="deal-details"><tr><td>Property Type</td><td>Industrial</td></tr><tr><td>Loan Type</td><td>Bridge</td></tr><tr><td>Lender Type</td><td>Bank</td></tr></table>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $14.5 million bridge loan for Cotton Flex Center, an industrial property in Phoenix, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+      <div class="deal-modal-overlay" id="modal-arrowhead" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Arrowhead_edited.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Office</span>
+            <h2>Arrowhead Center</h2>
+            <p class="deal-amt">$14,425,000</p>
+            <p class="deal-meta">Glendale, Arizona</p>
+            <table class="deal-details"><tr><td>Property Type</td><td>Office</td></tr><tr><td>Loan Type</td><td>Permanent</td></tr><tr><td>Lender Type</td><td>CMBS</td></tr></table>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $14.4 million permanent loan for Arrowhead Center, a multi-tenant office park in Glendale, Arizona. Financing was placed through CMBS. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+      <div class="deal-modal-overlay" id="modal-lifestorage-gilbert" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Storage</span>
+            <h2>Life Storage</h2>
+            <p class="deal-amt">$11,500,000</p>
+            <p class="deal-meta">Gilbert, Arizona</p>
+            <table class="deal-details"><tr><td>Property Type</td><td>Self-Storage</td></tr><tr><td>Loan Type</td><td>Bridge</td></tr><tr><td>Lender Type</td><td>Debt Fund</td></tr></table>
+            <p class="deal-prose">Vestmont Capital Inc. arranged an $11.5 million bridge loan for a Class A self-storage facility in Gilbert, Arizona. Financing was placed with a debt fund. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+      <div class="deal-modal-overlay" id="modal-macallister-pc" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Mac2.png')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Private Debt · Apartments</span>
+            <h2>The Macallister</h2>
+            <p class="deal-amt">$3,200,000</p>
+            <p class="deal-meta">Scottsdale, Arizona</p>
+            <table class="deal-details"><tr><td>Property Type</td><td>Multifamily</td></tr><tr><td>Loan Type</td><td>Bridge</td></tr><tr><td>Lender Type</td><td>Private Lender</td></tr></table>
+            <p class="deal-prose">Vestmont Capital Inc. provided a $3.2 million private bridge loan for The Macallister, a multifamily property in Scottsdale, Arizona. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+      <div class="deal-modal-overlay" id="modal-urban" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/The%20Urban.JPG')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Debt · Apartments</span>
+            <h2>The Urban</h2>
+            <p class="deal-amt">$6,020,000</p>
+            <p class="deal-meta">Phoenix, Arizona</p>
+            <table class="deal-details"><tr><td>Property Type</td><td>Multifamily</td></tr><tr><td>Loan Type</td><td>Bridge</td></tr><tr><td>Lender Type</td><td>Bank</td></tr></table>
+            <p class="deal-prose">Vestmont Capital Inc. arranged a $6.02 million bridge loan for The Urban, a multifamily property in Phoenix, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+            <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+          </div>
+        </div>
+      </div>
+
+<section class="section section-cta">
+  <div class="container cta-inner reveal">
+    <h2>Need to size a deal?</h2>
+    <p>Send us the asset summary and we'll respond with indicative terms within 48 hours.</p>
+    <a href="start-a-deal.html" class="btn btn-primary">Start a Conversation</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="partials.js?v=12" defer></script>
+<script>
+function openDealModal(id){var m=document.getElementById('modal-'+id);if(!m)return;m.classList.add('is-open');document.body.style.overflow='hidden';}
+function closeDealModal(){document.querySelectorAll('.deal-modal-overlay').forEach(function(m){m.classList.remove('is-open');});document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDealModal();});
+</script>
+<script>
+(function(){
+  var counted = false;
+  var els = document.querySelectorAll('[data-count]');
+  function formatDollar(n) {
+    if (n >= 1e9) return '$' + (n / 1e9).toFixed(n % 1e9 === 0 ? 0 : 1).replace(/\.0$/, '') + 'B+';
+    if (n >= 1e6) return '$' + Math.round(n / 1e6) + 'M+';
+    if (n >= 1e3) return '$' + Math.round(n / 1e3) + 'K';
+    return '$' + Math.round(n);
+  }
+  function animate(el) {
+    var target = parseInt(el.dataset.count);
+    var prefix = el.dataset.prefix || '';
+    var suffix = el.dataset.suffix || '';
+    var isDollar = el.dataset.format === 'dollar';
+    var duration = isDollar ? 2500 : 2000;
+    var from = parseInt(el.dataset.from) || 1;
+    var start = performance.now();
+    function step(now) {
+      var t = Math.min((now - start) / duration, 1);
+      var ease = 1 - Math.pow(1 - t, 3);
+      if (isDollar) {
+        var logFrom = Math.log(from || 1);
+        var logTo = Math.log(target);
+        var val = Math.round(Math.exp(logFrom + ease * (logTo - logFrom)));
+        el.textContent = formatDollar(val);
+      } else {
+        var val = Math.round(from + ease * (target - from));
+        el.textContent = prefix + val + suffix;
+      }
+      if (t < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting && !counted) {
+        counted = true;
+        els.forEach(animate);
+        obs.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  els.forEach(function(el) { obs.observe(el); });
+})();
+</script>
+</body>
+</html>

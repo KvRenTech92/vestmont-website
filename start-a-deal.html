@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Start a Deal — Vestmont</title>
+<meta name="description" content="Send us your deal. Debt, equity, sales, or advisory — we'll size it and respond within 24 hours." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="page-hero" style="background-image: url('assets/flow pics/Conference_table_with_documents_…_202605081447.jpeg')">
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-inner">
+    <p class="eyebrow light">Start a Deal</p>
+    <h1 class="light">Send us your deal.</h1>
+    <p class="lede light">We respond within 24 hours. Sponsors, brokers, and capital sources welcome.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-paths reveal-stagger">
+      <div class="path">
+        <span class="path-num">01</span>
+        <h3>Sponsors & Developers</h3>
+        <p>Need debt, equity, or both? Send the deal — we'll size it and respond.</p>
+        <a href="mailto:info@vestmont.com" class="link-arrow">info@vestmont.com →</a>
+      </div>
+      <div class="path">
+        <span class="path-num">02</span>
+        <h3>Brokers & Sellers</h3>
+        <p>Listing assignments, BOVs, and co-broker inquiries.</p>
+        <a href="mailto:info@vestmont.com" class="link-arrow">info@vestmont.com →</a>
+      </div>
+      <div class="path">
+        <span class="path-num">03</span>
+        <h3>Capital Partners</h3>
+        <p>Family offices, funds, and HNW investors looking for AZ deal flow.</p>
+        <a href="mailto:info@vestmont.com" class="link-arrow">info@vestmont.com →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-form">
+  <div class="container two-col reveal">
+    <div>
+      <p class="section-eyebrow">Deal Submission</p>
+      <h2>Or send us the details.</h2>
+      <p class="prose">Whether you're sizing debt, evaluating a sale, or pressure-testing a development, we'll respond within 24 hours.</p>
+      <div class="contact-info">
+        <p><strong>Gainey Ranch Financial Center</strong><br/>7373 E. Doubletree Ranch Road, Suite 200<br/>Scottsdale, Arizona 85258</p>
+        <p><strong>Hours</strong><br/>Mon–Fri · 8am–6pm MST</p>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — we\'ll be in touch within 24 hours.');">
+      <div class="form-row">
+        <label>First Name<input type="text" required /></label>
+        <label>Last Name<input type="text" required /></label>
+      </div>
+      <div class="form-row">
+        <label>Email<input type="email" required /></label>
+        <label>Phone<input type="tel" /></label>
+      </div>
+      <label>Firm / Company<input type="text" /></label>
+      <label>What do you need?
+        <select>
+          <option>Capital Markets — Debt</option>
+          <option>Capital Markets — Equity</option>
+          <option>Investment Sales — Disposition</option>
+          <option>Investment Sales — Acquisition</option>
+          <option>Project Advisory</option>
+          <option>Joint Venture / Co-Development</option>
+        </select>
+      </label>
+      <label>Tell us about the deal<textarea rows="5" placeholder="Asset class, location, size, timing, capital stack, and what you need from us."></textarea></label>
+      <button type="submit" class="btn btn-primary">Submit Deal</button>
+    </form>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="partials.js?v=12" defer></script>
+</body>
+</html>

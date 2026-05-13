@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vestmont — Commercial Real Estate, Simplified</title>
+<meta name="description" content="Vestmont empowers developers and investors with tailored solutions across capital markets, investment sales, and project advisory." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=116" />
+<style>
+.deal { background: #fff !important; border: none !important; box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important; }
+.deal-img { filter: saturate(0.85) contrast(1.08) brightness(0.95) sepia(0.06) !important; }
+.deal-tag { color: #8b7355 !important; }
+.deal h3 { color: #1f2937 !important; }
+.deal .deal-amt { color: #1f2937 !important; }
+.deal-meta { color: rgba(31,41,55,0.45) !important; }
+.deal-view-btn { color: #8b7355 !important; }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="hero-video hero-gradient">
+  <video class="hero-bg-video hero-vid" autoplay muted playsinline>
+    <source src="assets/Cinematic_drone_shot_continues_smoothly_202605081254.mp4" type="video/mp4">
+  </video>
+  <video class="hero-bg-video hero-vid" muted playsinline style="opacity:0;">
+    <source src="assets/The_drone_slowly_rises_higher,_202605081318.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <p class="eyebrow light">Phoenix · Arizona · Nationally Active</p>
+    <h1 class="light">Boutique strategy. <em>Institutional execution.</em></h1>
+    <p class="lede light">Vestmont is a Phoenix-based commercial real estate firm placing capital, executing sales, and advising sponsors on the deals that move markets across the Southwest.</p>
+    <div class="hero-cta">
+      <a href="start-a-deal.html" class="btn btn-primary">Start a Conversation</a>
+      <a href="track-record.html" class="btn btn-ghost dark">See the Track Record →</a>
+    </div>
+  </div>
+  <a href="#stats" class="hero-scroll" aria-label="Scroll">↓</a>
+</section>
+<script>
+(function(){
+  var vids = Array.from(document.querySelectorAll('.hero-vid'));
+  var cur = 0;
+  var FADE = 1.2;
+  var switching = false;
+  function crossfade(){
+    if (switching) return;
+    switching = true;
+    var next = (cur + 1) % vids.length;
+    var incoming = vids[next];
+    var outgoing = vids[cur];
+    incoming.currentTime = 0;
+    incoming.play().then(function(){
+      incoming.style.transition = 'opacity '+FADE+'s ease';
+      incoming.style.opacity = '1';
+      outgoing.style.transition = 'opacity '+FADE+'s ease';
+      outgoing.style.opacity = '0';
+      cur = next;
+      switching = false;
+    }).catch(function(){ switching = false; });
+  }
+  vids.forEach(function(v){ v.muted = true; v.addEventListener('ended', crossfade); });
+  function start(){
+    vids[0].play().catch(function(){ setTimeout(start, 200); });
+  }
+  if (vids[0].readyState >= 2) start();
+  else vids[0].addEventListener('canplay', start, {once: true});
+})();
+</script>
+
+<section class="rates-band">
+  <div class="container">
+    <div id="vm-rates" style="font-family:'Helvetica Neue',Arial,sans-serif;color:#fff;width:100%;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:6px;margin-bottom:10px;">
+        <div style="font-size:11px;letter-spacing:2.5px;font-weight:500;opacity:.7;">TODAY'S RATES</div>
+        <div id="vm-date" style="font-size:11px;letter-spacing:1px;opacity:.6;">—</div>
+      </div>
+      <div id="vm-row">
+        <div class="vm-col" data-id="SOFR30DAYAVG"></div>
+        <div class="vm-col" data-id="DPRIME"></div>
+        <div class="vm-col" data-id="DGS5"></div>
+        <div class="vm-col" data-id="DGS7"></div>
+        <div class="vm-col" data-id="DGS10"></div>
+      </div>
+      <div style="margin-top:10px;font-size:10px;opacity:.4;letter-spacing:.4px;">
+        Source: Federal Reserve Economic Data (FRED), St. Louis Fed. Updated daily.
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+var ENDPOINT='https://vestmont-rates.maxmon2791.workers.dev/api/rates';
+var LABELS={SOFR30DAYAVG:'SOFR · 1-Mo',DPRIME:'Prime Rate',DGS5:'Treasury · 5Y',DGS7:'Treasury · 7Y',DGS10:'Treasury · 10Y'};
+var FB={SOFR30DAYAVG:3.64,DPRIME:6.75,DGS5:3.90,DGS7:4.08,DGS10:4.29};
+var RATE_DATA={};
+var ratesAnimated=false;
+
+function setDate(iso){var d=iso?new Date(iso):new Date();document.getElementById('vm-date').textContent=String(d.getMonth()+1).padStart(2,'0')+'.'+String(d.getDate()).padStart(2,'0')+'.'+d.getFullYear();}
+
+function renderVal(el,v){
+  el.querySelector('.vm-value').innerHTML=v.toFixed(2)+'<span style="margin-left:1px;font-size:0.7em">%</span>';
+}
+
+function paint(id,v){
+  var el=document.querySelector('.vm-col[data-id="'+id+'"]');
+  if(!el)return;
+  RATE_DATA[id]=v;
+  if(!el.querySelector('.vm-label')){
+    el.innerHTML='<div class="vm-label">'+LABELS[id]+'</div><div class="vm-value">0.00<span style="margin-left:1px;font-size:0.7em">%</span></div>';
+  }
+  if(ratesAnimated) renderVal(el,v);
+}
+
+function animateRates(){
+  if(ratesAnimated) return;
+  ratesAnimated=true;
+  var easeOut=function(t){return 1-Math.pow(1-t,3);};
+  var duration=1400;
+  var start=performance.now();
+  var cols=document.querySelectorAll('.vm-col[data-id]');
+  function tick(now){
+    var t=Math.min((now-start)/duration,1);
+    var e=easeOut(t);
+    cols.forEach(function(el){
+      var id=el.dataset.id;
+      var target=RATE_DATA[id];
+      if(typeof target!=='number') return;
+      var cur=target*e;
+      if(t<1){
+        renderVal(el,cur);
+      } else {
+        renderVal(el,target);
+      }
+    });
+    if(t<1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+setDate();Object.keys(FB).forEach(function(id){paint(id,FB[id]);});
+fetch(ENDPOINT,{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){if(d&&d.updated)setDate(d.updated);(d&&d.rates||[]).forEach(function(r){if(r&&r.id&&typeof r.value==="number")paint(r.id,r.value);});}).catch(function(){});
+
+var ratesObs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){animateRates();ratesObs.disconnect();}
+  });
+},{threshold:0.3});
+var ratesBand=document.querySelector('.rates-band');
+if(ratesBand) ratesObs.observe(ratesBand);
+})();
+</script>
+
+<section class="section history-intro reveal">
+  <div class="container history-inner">
+    <p class="section-eyebrow">Our History</p>
+    <h2 class="history-title">Built in Arizona. Trusted across the Southwest.</h2>
+    <p class="history-prose">Since our founding in 2013, Vestmont has grown into one of the Southwest's most active independent commercial real estate platforms — placing capital, executing sales, and advising sponsors on the deals that move markets. Over more than a decade, our team has financed and transacted across multifamily, office, retail, industrial, hospitality, self-storage, senior living, and master-planned development.</p>
+  </div>
+</section>
+
+<section id="stats" class="stats reveal">
+  <div class="container stats-grid reveal-stagger">
+    <div><span class="stat-num" data-prefix="$" data-target="3" data-suffix="B+" data-decimals="0" data-count-dollars="true">$1</span><span class="stat-label">Capital Placed & Advised</span></div>
+    <div><span class="stat-num" data-target="275" data-suffix="+">0+</span><span class="stat-label">Transactions</span></div>
+    <div><span class="stat-num">AZ</span><span class="stat-label">Headquartered · National Reach</span></div>
+    <div><span class="stat-num" data-target="3">0</span><span class="stat-label">Lines of Business</span></div>
+  </div>
+</section>
+<script>
+(function(){
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+
+  /* Format large dollar amounts: $1 → $999 → $1K → $999K → $1M → $999M → $1B → $3B+ */
+  function formatDollars(val) {
+    if (val >= 1e9) return '$' + (val / 1e9).toFixed(val >= 2.5e9 ? 0 : 1) + 'B+';
+    if (val >= 1e6) return '$' + Math.floor(val / 1e6) + 'M+';
+    if (val >= 1e3) return '$' + Math.floor(val / 1e3) + 'K+';
+    return '$' + Math.floor(val);
+  }
+
+  /* Animate $1 → $3B+ on a log-ish scale so every magnitude gets screen time */
+  const animateDollars = (el) => {
+    const targetVal = 3e9; // $3B
+    const duration = 2400;
+    const start = performance.now();
+    const logStart = Math.log(1);
+    const logEnd = Math.log(targetVal);
+    const tick = (now) => {
+      const t = Math.min((now - start) / duration, 1);
+      const eased = easeOut(t);
+      const logVal = logStart + (logEnd - logStart) * eased;
+      const val = Math.exp(logVal);
+      if (t < 1) {
+        el.textContent = formatDollars(val);
+        requestAnimationFrame(tick);
+      } else {
+        el.textContent = '$3B+';
+      }
+    };
+    requestAnimationFrame(tick);
+  };
+
+  const animate = (el) => {
+    if (el.dataset.countDollars) {
+      animateDollars(el);
+      return;
+    }
+    const target = parseFloat(el.dataset.target);
+    const decimals = parseInt(el.dataset.decimals || '0', 10);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const duration = 1800;
+    const start = performance.now();
+    const tick = (now) => {
+      const t = Math.min((now - start) / duration, 1);
+      const v = target * easeOut(t);
+      el.textContent = prefix + v.toFixed(decimals) + suffix;
+      if (t < 1) requestAnimationFrame(tick);
+      else el.textContent = prefix + target.toFixed(decimals) + suffix;
+    };
+    requestAnimationFrame(tick);
+  };
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting && !e.target.dataset.played) {
+        e.target.dataset.played = '1';
+        animate(e.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('.stat-num[data-target]').forEach(el => obs.observe(el));
+})();
+</script>
+
+<section class="section reveal">
+  <div class="container two-col">
+    <div>
+      <p class="section-eyebrow">The Firm</p>
+      <h2>Built for the investors and developers who actually close deals.</h2>
+    </div>
+    <div class="prose">
+      <p>Vestmont was founded on a simple frustration: too much of commercial real estate is theater. We do the work — sizing the debt before sending the term sheet, underwriting the deal before pitching the buyer, telling sponsors what their project actually needs.</p>
+      <p><a href="about.html" class="link-arrow">Read the full story →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container reveal">
+    <p class="section-eyebrow light">What We Do</p>
+    <h2 class="section-title light">Three pillars. One standard.</h2>
+    <div class="pillars reveal-stagger">
+      <a href="capital.html" class="pillar">
+        <span class="pillar-num">01</span>
+        <h3>Capital Markets</h3>
+        <p>Debt and equity placement across acquisition, construction, bridge, and permanent financing.</p>
+        <span class="pillar-link">Explore →</span>
+      </a>
+      <a href="investment-sales.html" class="pillar">
+        <span class="pillar-num">02</span>
+        <h3>Investment Sales</h3>
+        <p>Brokerage across multifamily, industrial, hotel, retail, and mixed-use. We list deals we'd buy.</p>
+        <span class="pillar-link">Explore →</span>
+      </a>
+      <a href="advisory.html" class="pillar">
+        <span class="pillar-num">03</span>
+        <h3>Project Advisory</h3>
+        <p>Strategic guidance for developers on capital stack, feasibility, and exit.</p>
+        <span class="pillar-link">Explore →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-portfolio">
+  <div class="container">
+    <div class="portfolio-head reveal">
+      <div>
+        <p class="section-eyebrow">Featured</p>
+        <h2>Selected transactions.</h2>
+      </div>
+      <a href="track-record.html" class="btn btn-ghost">See More →</a>
+    </div>
+    <div class="portfolio-grid reveal-stagger">
+      <article class="deal deal-feature" onclick="openDealModal('ritz')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/deal-ritz-pv.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Master-Plan</span>
+          <h3>Ritz Carlton</h3>
+          <p class="deal-amt">$72,955,000</p>
+          <p class="deal-meta">Paradise Valley, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+      <article class="deal" onclick="openDealModal('lifestorage-sale')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Storage</span>
+          <h3>Life Storage</h3>
+          <p class="deal-amt">$30,500,000</p>
+          <p class="deal-meta">Gilbert, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+      <article class="deal" onclick="openDealModal('kyrene')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/Kyrene%20Village.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Retail</span>
+          <h3>Kyrene Village</h3>
+          <p class="deal-amt">$18,550,000</p>
+          <p class="deal-meta">Chandler, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Deal Modals -->
+<div class="deal-modal-overlay" id="modal-ritz" onclick="if(event.target===this)closeDealModal()">
+  <div class="deal-modal">
+    <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+    <div class="deal-modal-img" style="background-image: url('assets/deal-ritz-pv.jpg')"></div>
+    <div class="deal-modal-body">
+      <span class="deal-tag">Debt · Master-Plan</span>
+      <h2>Ritz Carlton Paradise Valley</h2>
+      <p class="deal-amt">$72,955,000</p>
+      <p class="deal-meta">Paradise Valley, Arizona</p>
+      <table class="deal-details"><tr><td>Property Type</td><td>Mixed-Use Master-Plan</td></tr><tr><td>Loan Type</td><td>Construction / Bridge</td></tr><tr><td>Lender Type</td><td>Bank</td></tr></table>
+      <p class="deal-prose">Vestmont Capital Inc. arranged ±$72.9 million in land &amp; horizontal construction financing of a 122-acre Ritz Carlton master-plan community featuring a Luxury Resort, High-End Retail, Luxury Homes, Condos, and Townhomes. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+      <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+    </div>
+  </div>
+</div>
+<div class="deal-modal-overlay" id="modal-lifestorage-sale" onclick="if(event.target===this)closeDealModal()">
+  <div class="deal-modal">
+    <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+    <div class="deal-modal-body">
+      <span class="deal-tag">Sale · Storage</span>
+      <h2>Life Storage</h2>
+      <p class="deal-amt">$30,500,000</p>
+      <p class="deal-meta">892 S. Higley Rd., Gilbert, Arizona</p>
+      <table class="deal-details"><tr><td>Property Type</td><td>Self-Storage</td></tr><tr><td>Transaction Type</td><td>Sale Listing</td></tr></table>
+      <p class="deal-prose">Vestmont Inc. represented the seller in the disposition of a Class A climate-controlled self-storage facility in Gilbert, Arizona.</p>
+      <p class="deal-disclaimer">Brokerage services conducted exclusively by Vestmont Inc. (ADRE# CO648847000).</p>
+    </div>
+  </div>
+</div>
+<div class="deal-modal-overlay" id="modal-kyrene" onclick="if(event.target===this)closeDealModal()">
+  <div class="deal-modal">
+    <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/Kyrene%20Village.png')"></div>
+    <div class="deal-modal-body">
+      <span class="deal-tag">Sale · Retail</span>
+      <h2>Kyrene Village</h2>
+      <p class="deal-amt">$18,550,000</p>
+      <p class="deal-meta">6045–6225 W. Chandler Blvd., Chandler, Arizona</p>
+      <table class="deal-details"><tr><td>Property Type</td><td>Retail Center</td></tr><tr><td>Transaction Type</td><td>Cooperation Listing</td></tr></table>
+      <p class="deal-prose">Vestmont Inc. represented the sale of Kyrene Village, a retail center in Chandler, Arizona.</p>
+      <p class="deal-disclaimer">Brokerage services conducted exclusively by Vestmont Inc. (ADRE# CO648847000).</p>
+    </div>
+  </div>
+</div>
+
+<section class="section section-cta">
+  <div class="container cta-inner reveal">
+    <h2>Have a deal? Let's talk.</h2>
+    <p>Sizing debt, evaluating a sale, or pressure-testing a development — we respond within 24 hours.</p>
+    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="partials.js?v=12" defer></script>
+<script>
+function openDealModal(id){var m=document.getElementById('modal-'+id);if(!m)return;m.classList.add('is-open');document.body.style.overflow='hidden';}
+function closeDealModal(){document.querySelectorAll('.deal-modal-overlay').forEach(function(m){m.classList.remove('is-open');});document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDealModal();});
+</script>
+</body>
+</html>

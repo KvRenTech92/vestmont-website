@@ -1,0 +1,8 @@
+.DS_Store
+Tombestone Details/
+serve.sh
+.claude/
+*.xlsm
+*.xlsx
+node_modules/
+**/.DS_Store
