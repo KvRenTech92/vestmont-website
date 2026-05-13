@@ -57,8 +57,8 @@
       </div>
       <div>
         <p class="footer-h">Connect</p>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://x.com" target="_blank" rel="noopener">X / Twitter</a>
+        <a href="https://www.linkedin.com/company/vestmont" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/Vestmont" target="_blank" rel="noopener">X / Twitter</a>
       </div>
     </div>
   </div>
