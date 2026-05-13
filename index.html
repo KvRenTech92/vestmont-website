@@ -404,5 +404,30 @@ function openDealModal(id){var m=document.getElementById('modal-'+id);if(!m)retu
 function closeDealModal(){document.querySelectorAll('.deal-modal-overlay').forEach(function(m){m.classList.remove('is-open');});document.body.style.overflow='';}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDealModal();});
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vestmont",
+  "url": "https://vestmont.com",
+  "logo": "https://vestmont.com/assets/vestmont-logo-new.png",
+  "description": "Commercial real estate firm specializing in capital markets, investment sales, and project advisory.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Phoenix",
+    "addressRegion": "AZ",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/vestmont",
+    "https://x.com/Vestmont"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@vestmont.com",
+    "contactType": "General Inquiry"
+  }
+}
+</script>
 </body>
 </html>
