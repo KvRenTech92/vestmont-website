@@ -180,7 +180,7 @@
         <span class="path-num">01</span>
         <h3>Direct Lending</h3>
         <p class="path-headline">We are the lender.</p>
-        <p>When speed and certainty matter, we lend directly. Bridge, construction, and transitional capital with fast closings and flexible terms — $1M to $25M+, 6 to 36 months.</p>
+        <p>When speed and certainty matter, we lend directly. Bridge, construction, and transitional capital with fast closings and flexible terms — $2M to $25M+, 6 to 36 months.</p>
         <ul class="path-highlights">
           <li>Fund in as little as 10 days</li>
           <li>Interest-only, no prepayment penalty</li>
@@ -620,6 +620,16 @@
           <span class="deal-view-btn">View Detail →</span>
         </div>
       </article>
+      <article class="deal" onclick="openDealModal('rezide-uptown')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/rezide_edited_edited.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>Rezide Uptown</h3>
+          <p class="deal-amt">$4,050,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
       <!-- Eldorado hidden per Kevin -->
       <article class="deal" onclick="openDealModal('eldorado-cap')" style="display:none;">
         <div class="deal-img" style="background-image: url('assets/property%20pics/The%20Eldorado.png')"></div>
@@ -637,6 +647,21 @@
 </section>
 
 <!-- Deal Modals -->
+<div class="deal-modal-overlay" id="modal-rezide-uptown" onclick="if(event.target===this)closeDealModal()">
+  <div class="deal-modal">
+    <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/rezide_edited_edited.jpg')"></div>
+    <div class="deal-modal-body">
+      <span class="deal-tag">Debt · Apartments</span>
+      <h2>Rezide Uptown</h2>
+      <p class="deal-amt">$4,050,000</p>
+      <p class="deal-meta">Phoenix, AZ</p>
+      <table class="deal-details"><tr><td>Property Type</td><td>Multifamily</td></tr><tr><td>Loan Type</td><td>Permanent</td></tr><tr><td>Lender Type</td><td>Bank</td></tr></table>
+      <p class="deal-prose">Vestmont Capital Inc. arranged financing for Rezide Uptown, a multifamily property in Phoenix, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+      <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+    </div>
+  </div>
+</div>
 <div class="deal-modal-overlay" id="modal-eldorado-cap" onclick="if(event.target===this)closeDealModal()">
   <div class="deal-modal">
     <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
