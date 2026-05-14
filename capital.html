@@ -569,7 +569,8 @@
           <span class="deal-view-btn">View Detail →</span>
         </div>
       </article>
-      <article class="deal" onclick="openDealModal('cotton')" style="cursor:pointer;">
+      <!-- Cotton Center hidden per Kevin -->
+      <article class="deal" onclick="openDealModal('cotton')" style="display:none;">
         <div class="deal-img" style="background-image: url('assets/property%20pics/Cotten%20Center.jpeg')"></div>
         <div class="deal-body">
           <span class="deal-tag">Debt · Industrial</span>
@@ -619,12 +620,38 @@
           <span class="deal-view-btn">View Detail →</span>
         </div>
       </article>
+      <!-- Eldorado hidden per Kevin -->
+      <article class="deal" onclick="openDealModal('eldorado-cap')" style="display:none;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/The%20Eldorado.png')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Debt · Apartments</span>
+          <h3>The Eldorado</h3>
+          <p class="deal-amt">$6,050,000</p>
+          <p class="deal-meta">Scottsdale, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
 
     </div>
   </div>
 </section>
 
 <!-- Deal Modals -->
+<div class="deal-modal-overlay" id="modal-eldorado-cap" onclick="if(event.target===this)closeDealModal()">
+  <div class="deal-modal">
+    <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/The%20Eldorado.png')"></div>
+    <div class="deal-modal-body">
+      <span class="deal-tag">Debt · Apartments</span>
+      <h2>The Eldorado</h2>
+      <p class="deal-amt">$6,050,000</p>
+      <p class="deal-meta">Scottsdale, AZ</p>
+      <table class="deal-details"><tr><td>Property Type</td><td>Multifamily</td></tr><tr><td>Loan Type</td><td>Permanent</td></tr><tr><td>Lender Type</td><td>Bank</td></tr></table>
+      <p class="deal-prose">Vestmont Capital Inc. arranged financing for The Eldorado, a multifamily property in Scottsdale, Arizona. Financing was placed with a bank. Rate and terms were not disclosed.</p>
+      <p class="deal-disclaimer">Commercial mortgage loan origination conducted exclusively by Vestmont Capital Inc. (AZ CMB-924849 | NMLS 1045931).</p>
+    </div>
+  </div>
+</div>
 <div class="deal-modal-overlay" id="modal-ritz" onclick="if(event.target===this)closeDealModal()">
         <div class="deal-modal">
           <button class="deal-modal-close" onclick="closeDealModal()">✕</button>

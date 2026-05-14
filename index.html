@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=116" />
+<link rel="stylesheet" href="styles.css?v=117" />
 <style>
 .deal { background: #fff !important; border: none !important; box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important; }
 .deal-img { filter: saturate(0.85) contrast(1.08) brightness(0.95) sepia(0.06) !important; }
@@ -60,6 +60,28 @@
     </div>
   </div>
   <a href="#stats" class="hero-scroll" aria-label="Scroll">↓</a>
+
+</section>
+
+<section class="rates-band">
+  <div class="container">
+    <div id="vm-rates" style="font-family:'Helvetica Neue',Arial,sans-serif;color:#fff;width:100%;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:6px;margin-bottom:10px;">
+        <div style="font-size:11px;letter-spacing:2.5px;font-weight:500;opacity:.7;">TODAY'S RATES</div>
+        <div id="vm-date" style="font-size:11px;letter-spacing:1px;opacity:.6;">—</div>
+      </div>
+      <div id="vm-row">
+        <div class="vm-col" data-id="SOFR30DAYAVG"></div>
+        <div class="vm-col" data-id="DPRIME"></div>
+        <div class="vm-col" data-id="DGS5"></div>
+        <div class="vm-col" data-id="DGS7"></div>
+        <div class="vm-col" data-id="DGS10"></div>
+      </div>
+      <div style="margin-top:10px;font-size:10px;opacity:.4;letter-spacing:.4px;">
+        Source: Federal Reserve Economic Data (FRED), St. Louis Fed. Updated daily.
+      </div>
+    </div>
+  </div>
 </section>
 <script>
 (function(){
@@ -92,26 +114,6 @@
 })();
 </script>
 
-<section class="rates-band">
-  <div class="container">
-    <div id="vm-rates" style="font-family:'Helvetica Neue',Arial,sans-serif;color:#fff;width:100%;">
-      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:6px;margin-bottom:10px;">
-        <div style="font-size:11px;letter-spacing:2.5px;font-weight:500;opacity:.7;">TODAY'S RATES</div>
-        <div id="vm-date" style="font-size:11px;letter-spacing:1px;opacity:.6;">—</div>
-      </div>
-      <div id="vm-row">
-        <div class="vm-col" data-id="SOFR30DAYAVG"></div>
-        <div class="vm-col" data-id="DPRIME"></div>
-        <div class="vm-col" data-id="DGS5"></div>
-        <div class="vm-col" data-id="DGS7"></div>
-        <div class="vm-col" data-id="DGS10"></div>
-      </div>
-      <div style="margin-top:10px;font-size:10px;opacity:.4;letter-spacing:.4px;">
-        Source: Federal Reserve Economic Data (FRED), St. Louis Fed. Updated daily.
-      </div>
-    </div>
-  </div>
-</section>
 <script>
 (function(){
 var ENDPOINT='https://vestmont-rates.maxmon2791.workers.dev/api/rates';

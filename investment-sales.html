@@ -180,7 +180,8 @@
       <a href="track-record.html" class="btn btn-ghost">See More →</a>
     </div>
     <div class="portfolio-grid reveal-stagger" style="grid-template-columns: repeat(4, 1fr);">
-      <article class="deal" onclick="openDealModal('cotton-buy')" style="cursor:pointer;">
+      <!-- Cotton Flex Center hidden per Kevin -->
+      <article class="deal" onclick="openDealModal('cotton-buy')" style="display:none;">
         <div class="deal-img" style="background-image: url('assets/property%20pics/Cotten%20Center.jpeg')"></div>
         <div class="deal-body">
           <span class="deal-tag">Purchase · Industrial</span>
@@ -220,11 +221,36 @@
           <span class="deal-view-btn">View Detail →</span>
         </div>
       </article>
+      <article class="deal" onclick="openDealModal('thrift')" style="cursor:pointer;">
+        <div class="deal-img" style="background-image: url('assets/property%20pics/Thrift%20Thrive.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Purchase · Retail</span>
+          <h3>Thrift to Thrive</h3>
+          <p class="deal-amt">$3,500,000</p>
+          <p class="deal-meta">Phoenix, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- Deal Modals (outside reveal-stagger to prevent auto-trigger on scroll) -->
+<div class="deal-modal-overlay" id="modal-thrift" onclick="if(event.target===this)closeDealModal()">
+  <div class="deal-modal">
+    <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Thrift%20Thrive.jpg')"></div>
+    <div class="deal-modal-body">
+      <span class="deal-tag">Purchase · Retail</span>
+      <h2>Thrift to Thrive</h2>
+      <p class="deal-amt">$3,500,000</p>
+      <p class="deal-meta">Phoenix, AZ</p>
+      <table class="deal-details"><tr><td>Property Type</td><td>Retail</td></tr><tr><td>Transaction Type</td><td>Buyer Representation</td></tr></table>
+      <p class="deal-prose">Vestmont Inc. represented the acquisition of Thrift to Thrive, a retail property in Phoenix, Arizona.</p>
+      <p class="deal-disclaimer">Brokerage services conducted exclusively by Vestmont Inc. (ADRE# CO648847000).</p>
+    </div>
+  </div>
+</div>
 <div class="deal-modal-overlay" id="modal-cotton-buy" onclick="if(event.target===this)closeDealModal()">
   <div class="deal-modal">
     <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
