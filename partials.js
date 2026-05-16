@@ -18,6 +18,8 @@
     </a>
     <nav class="nav-links" id="nav-links">
       <button class="nav-close" id="nav-close" aria-label="Close menu">&times;</button>
+      <a href="${base}index.html" class="nav-mobile-link">Home</a>
+      <div class="nav-mobile-divider"></div>
       ${link('about.html', 'About')}
       ${link('capital.html', 'Capital')}
       ${link('investment-sales.html', 'Brokerage')}
@@ -25,6 +27,7 @@
       ${link('track-record.html', 'Track Record')}
       ${link('insights.html', 'Insights')}
       ${link('contact.html', 'Contact')}
+      <div class="nav-mobile-divider"></div>
       <a href="${base}start-a-deal.html" class="nav-cta">Start a Deal</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="Menu">&#9776;</button>

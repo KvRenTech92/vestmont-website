@@ -178,12 +178,14 @@ em { font-style: italic; color: var(--brand-light); }
 }
 .nav-backdrop.open { display: block; opacity: 1; }
 .nav-close {
-  display: none; position: absolute; top: 24px; right: 24px;
-  background: none; border: none; color: #fff; font-size: 2rem;
+  display: none; position: absolute; top: 20px; right: 20px;
+  background: none; border: none; color: rgba(255,255,255,0.5); font-size: 1.8rem;
   cursor: pointer; width: 48px; height: 48px;
   align-items: center; justify-content: center;
   z-index: 10001;
 }
+.nav-close:hover { color: #fff; }
+.nav-mobile-divider { display: none; }
 
 /* ---------- Hero ---------- */
 .hero-video {
@@ -1269,10 +1271,10 @@ h1.light em { color: var(--brand-light); }
     position: fixed; inset: 0;
     background: var(--brand-ink);
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 0;
-    padding: 40px 32px;
+    padding: 60px 48px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.35s var(--ease), visibility 0.35s;
@@ -1283,23 +1285,36 @@ h1.light em { color: var(--brand-light); }
   }
   .nav-links.open { opacity: 1; visibility: visible; }
   .nav-links a {
-    padding: 16px 0;
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    letter-spacing: 0.01em;
+    padding: 14px 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 300;
+    font-size: 1.35rem;
+    letter-spacing: 0.03em;
     border-bottom: none;
-    color: rgba(255,255,255,0.85);
-    text-align: center;
+    color: rgba(255,255,255,0.7);
+    text-align: left;
     width: auto;
   }
   .nav-links a:hover { color: #fff; }
   .nav-links a::after { display: none; }
-  .nav-cta {
-    margin-top: 32px; text-align: center;
-    padding: 14px 32px !important;
-    font-size: 1rem !important;
+  .nav-mobile-divider {
+    width: 40px;
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+    margin: 8px 0;
   }
+  .nav-cta {
+    margin-top: 8px; text-align: left;
+    padding: 14px 0 !important;
+    font-size: 1.35rem !important;
+    font-weight: 300 !important;
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: var(--brand-light) !important;
+    letter-spacing: 0.03em;
+  }
+  .nav-cta:hover { color: #fff !important; background: none !important; }
   .nav-toggle { display: flex; }
   .nav-close { display: flex; }
 
