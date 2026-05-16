@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vestmont Insights</title>
+    <link>https://vestmont.com/insights.html</link>
+    <description>Capital markets commentary, Phoenix-specific market views, and asset-class deep dives from Vestmont Capital.</description>
+    <language>en-us</language>
+    <atom:link href="https://vestmont.com/feed.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://vestmont.com/assets/vestmont-logo-new.png</url>
+      <title>Vestmont Insights</title>
+      <link>https://vestmont.com/insights.html</link>
+    </image>
+
+    <item>
+      <title>The West Valley basis trade nobody is talking about.</title>
+      <link>https://vestmont.com/insights/west-valley-basis-trade.html</link>
+      <guid isPermaLink="true">https://vestmont.com/insights/west-valley-basis-trade.html</guid>
+      <pubDate>Thu, 15 May 2026 08:00:00 -0700</pubDate>
+      <category>Phoenix Multifamily</category>
+      <description>Class B vintage product is trading at land basis in pockets of Surprise, El Mirage, and west Glendale. We map the submarkets where the rent comps still don't work — and where they do.</description>
+    </item>
+
+    <item>
+      <title>Select-service economics in a $300/sf world.</title>
+      <link>https://vestmont.com/insights/select-service-hotel.html</link>
+      <guid isPermaLink="true">https://vestmont.com/insights/select-service-hotel.html</guid>
+      <pubDate>Mon, 12 May 2026 08:00:00 -0700</pubDate>
+      <category>Hotel Development</category>
+      <description>What flag, what footprint, and what FF&amp;E reserves actually pencil when construction stays sticky.</description>
+    </item>
+
+    <item>
+      <title>Why mixed-use comps lie — and how to underwrite around it.</title>
+      <link>https://vestmont.com/insights/mixed-use-comps.html</link>
+      <guid isPermaLink="true">https://vestmont.com/insights/mixed-use-comps.html</guid>
+      <pubDate>Fri, 09 May 2026 08:00:00 -0700</pubDate>
+      <category>Mixed-Use</category>
+      <description>Mixed-use deals are usually comped against single-product peers. Here's how to build a defensible BOV.</description>
+    </item>
+
+    <item>
+      <title>Grocery-anchored is still the safest yield in CRE.</title>
+      <link>https://vestmont.com/insights/grocery-anchored.html</link>
+      <guid isPermaLink="true">https://vestmont.com/insights/grocery-anchored.html</guid>
+      <pubDate>Mon, 21 Apr 2026 08:00:00 -0700</pubDate>
+      <category>Retail</category>
+      <description>Why the spread between grocery-anchored cap rates and 10-year treasuries still pencils for patient capital.</description>
+    </item>
+
+    <item>
+      <title>Entitled vs. raw: what's the basis spread worth today?</title>
+      <link>https://vestmont.com/insights/entitled-vs-raw.html</link>
+      <guid isPermaLink="true">https://vestmont.com/insights/entitled-vs-raw.html</guid>
+      <pubDate>Mon, 14 Apr 2026 08:00:00 -0700</pubDate>
+      <category>Land</category>
+      <description>How developers are pricing entitlement risk in the East and West Valley as utility timelines extend.</description>
+    </item>
+
+    <item>
+      <title>Why bridge-to-perm is back, and what to ask before you sign.</title>
+      <link>https://vestmont.com/insights/bridge-to-perm.html</link>
+      <guid isPermaLink="true">https://vestmont.com/insights/bridge-to-perm.html</guid>
+      <pubDate>Mon, 17 Mar 2026 08:00:00 -0700</pubDate>
+      <category>Capital Markets</category>
+      <description>Spreads have compressed and rate-cap costs are real. A practical checklist before you commit to a 24-month bridge.</description>
+    </item>
+
+    <item>
+      <title>Small-bay vs. big-box: the divergence is real.</title>
+      <link>https://vestmont.com/insights/small-bay-vs-big-box.html</link>
+      <guid isPermaLink="true">https://vestmont.com/insights/small-bay-vs-big-box.html</guid>
+      <pubDate>Mon, 10 Mar 2026 08:00:00 -0700</pubDate>
+      <category>Industrial</category>
+      <description>Sub-30k sf flex is leasing at premium rents while bulk distribution sits. The capex implications matter.</description>
+    </item>
+
+  </channel>
+</rss>

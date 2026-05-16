@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=117" />
+<link rel="stylesheet" href="styles.css?v=120" />
 <style>
 .deal { background: #fff !important; border: none !important; box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important; }
 .deal-img { filter: saturate(0.85) contrast(1.08) brightness(0.95) sepia(0.06) !important; }
@@ -53,7 +53,7 @@
   <div class="container hero-inner">
     <p class="eyebrow light">Phoenix · Arizona · Nationally Active</p>
     <h1 class="light">Boutique strategy. <em>Institutional execution.</em></h1>
-    <p class="lede light">Vestmont is a Phoenix-based commercial real estate firm placing capital, executing sales, and advising sponsors on the deals that move markets across the Southwest.</p>
+    <p class="lede light">Vestmont is a Phoenix-based capital markets firm offering commercial real estate investors access to debt, equity, and real estate and development advisory throughout the Southwest.</p>
     <div class="hero-cta">
       <a href="start-a-deal.html" class="btn btn-primary">Start a Conversation</a>
       <a href="track-record.html" class="btn btn-ghost dark">See the Track Record →</a>
@@ -181,7 +181,7 @@ if(ratesBand) ratesObs.observe(ratesBand);
   <div class="container history-inner">
     <p class="section-eyebrow">Our History</p>
     <h2 class="history-title">Built in Arizona. Trusted across the Southwest.</h2>
-    <p class="history-prose">Since our founding in 2013, Vestmont has grown into one of the Southwest's most active independent commercial real estate platforms — placing capital, executing sales, and advising sponsors on the deals that move markets. Over more than a decade, our team has financed and transacted across multifamily, office, retail, industrial, hospitality, self-storage, senior living, and master-planned development.</p>
+    <p class="history-prose">Since our founding in 2013, Vestmont has grown into one of the Southwest's most active independent commercial real estate platforms — offering commercial real estate investors access to debt, equity, and real estate and development advisory. Over more than a decade, our team has financed and transacted across multifamily, office, retail, industrial, hospitality, self-storage, senior living, and master-planned development.</p>
   </div>
 </section>
 
@@ -291,8 +291,8 @@ if(ratesBand) ratesObs.observe(ratesBand);
       </a>
       <a href="advisory.html" class="pillar">
         <span class="pillar-num">03</span>
-        <h3>Project Advisory</h3>
-        <p>Strategic guidance for developers on capital stack, feasibility, and exit.</p>
+        <h3>Development Advisory</h3>
+        <p>Full-cycle advisory from feasibility and entitlements through construction oversight, stabilization, and disposition.</p>
         <span class="pillar-link">Explore →</span>
       </a>
     </div>
@@ -320,7 +320,7 @@ if(ratesBand) ratesObs.observe(ratesBand);
         </div>
       </article>
       <article class="deal" onclick="openDealModal('lifestorage-sale')" style="cursor:pointer;">
-        <div class="deal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+        <div class="deal-img" style="background-image: url('assets/deals/dji-aerial.jpg')"></div>
         <div class="deal-body">
           <span class="deal-tag">Storage</span>
           <h3>Life Storage</h3>
@@ -330,7 +330,7 @@ if(ratesBand) ratesObs.observe(ratesBand);
         </div>
       </article>
       <article class="deal" onclick="openDealModal('kyrene')" style="cursor:pointer;">
-        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/Kyrene%20Village.png')"></div>
+        <div class="deal-img" style="background-image: url('assets/deals/kyrene-village.jpg')"></div>
         <div class="deal-body">
           <span class="deal-tag">Retail</span>
           <h3>Kyrene Village</h3>
@@ -363,7 +363,7 @@ if(ratesBand) ratesObs.observe(ratesBand);
 <div class="deal-modal-overlay" id="modal-lifestorage-sale" onclick="if(event.target===this)closeDealModal()">
   <div class="deal-modal">
     <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
-    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+    <div class="deal-modal-img" style="background-image: url('assets/deals/dji-aerial.jpg')"></div>
     <div class="deal-modal-body">
       <span class="deal-tag">Sale · Storage</span>
       <h2>Life Storage</h2>
@@ -378,7 +378,7 @@ if(ratesBand) ratesObs.observe(ratesBand);
 <div class="deal-modal-overlay" id="modal-kyrene" onclick="if(event.target===this)closeDealModal()">
   <div class="deal-modal">
     <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
-    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/Kyrene%20Village.png')"></div>
+    <div class="deal-modal-img" style="background-image: url('assets/deals/kyrene-village.jpg')"></div>
     <div class="deal-modal-body">
       <span class="deal-tag">Sale · Retail</span>
       <h2>Kyrene Village</h2>
@@ -400,7 +400,7 @@ if(ratesBand) ratesObs.observe(ratesBand);
 </section>
 
 <div id="site-footer"></div>
-<script src="partials.js?v=12" defer></script>
+<script src="partials.js?v=13" defer></script>
 <script>
 function openDealModal(id){var m=document.getElementById('modal-'+id);if(!m)return;m.classList.add('is-open');document.body.style.overflow='hidden';}
 function closeDealModal(){document.querySelectorAll('.deal-modal-overlay').forEach(function(m){m.classList.remove('is-open');});document.body.style.overflow='';}

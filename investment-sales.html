@@ -30,7 +30,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
-<link rel="stylesheet" href="styles.css?v=116" />
+<link rel="stylesheet" href="styles.css?v=120" />
 <style>
 .deal { background: #fff !important; border: none !important; box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important; }
 .deal-img { filter: saturate(0.85) contrast(1.08) brightness(0.95) sepia(0.06) !important; }
@@ -45,7 +45,7 @@
 
 <div id="site-header"></div>
 
-<section class="page-hero" style="background-image: url('assets/flow pics/Wide_aerial_photograph_of_a_202605081338.jpeg')">
+<section class="page-hero" style="background-image: url('assets/heroes/wide-aerial.jpg')">
   <div class="page-hero-overlay"></div>
   <div class="container page-hero-inner">
     <p class="eyebrow light">Investment Sales</p>
@@ -118,9 +118,10 @@
 }
 .brok-svc {
   padding: 32px 28px;
-  background: var(--bg-2);
-  border-radius: 10px;
-  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 0;
+  border: 1px solid #e5e7eb;
+  border-left: 3px solid #C5A572;
   transition: all 0.35s var(--ease);
 }
 .brok-svc:hover {
@@ -179,10 +180,10 @@
       </div>
       <a href="track-record.html" class="btn btn-ghost">See More →</a>
     </div>
-    <div class="portfolio-grid reveal-stagger" style="grid-template-columns: repeat(4, 1fr);">
+    <div class="portfolio-grid reveal-stagger" style="grid-template-columns: repeat(3, 1fr);">
       <!-- Cotton Flex Center hidden per Kevin -->
       <article class="deal" onclick="openDealModal('cotton-buy')" style="display:none;">
-        <div class="deal-img" style="background-image: url('assets/property%20pics/Cotten%20Center.jpeg')"></div>
+        <div class="deal-img" style="background-image: url('assets/deals/cotten-center.jpg')"></div>
         <div class="deal-body">
           <span class="deal-tag">Purchase · Industrial</span>
           <h3>Cotton Flex Center</h3>
@@ -192,7 +193,7 @@
         </div>
       </article>
       <article class="deal" onclick="openDealModal('kyrene')" style="cursor:pointer;">
-        <div class="deal-img" style="background-image: url('assets/property%20pics/unknowns/Kyrene%20Village.png')"></div>
+        <div class="deal-img" style="background-image: url('assets/deals/kyrene-village.jpg')"></div>
         <div class="deal-body">
           <span class="deal-tag">Sale · Retail</span>
           <h3>Kyrene Village</h3>
@@ -202,7 +203,7 @@
         </div>
       </article>
       <article class="deal" onclick="openDealModal('lifestorage-sale')" style="cursor:pointer;">
-        <div class="deal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+        <div class="deal-img" style="background-image: url('assets/deals/dji-aerial.jpg')"></div>
         <div class="deal-body">
           <span class="deal-tag">Sale · Storage</span>
           <h3>Life Storage</h3>
@@ -212,7 +213,7 @@
         </div>
       </article>
       <article class="deal" onclick="openDealModal('rezide-sale')" style="cursor:pointer;">
-        <div class="deal-img" style="background-image: url('assets/property%20pics/rezide_edited_edited.jpg')"></div>
+        <div class="deal-img" style="background-image: url('assets/deals/rezide-uptown.jpg')"></div>
         <div class="deal-body">
           <span class="deal-tag">Sale · Multifamily</span>
           <h3>Rezide Uptown</h3>
@@ -221,16 +222,8 @@
           <span class="deal-view-btn">View Detail →</span>
         </div>
       </article>
-      <article class="deal" onclick="openDealModal('thrift')" style="cursor:pointer;">
-        <div class="deal-img" style="background-image: url('assets/property%20pics/Thrift%20Thrive.jpg')"></div>
-        <div class="deal-body">
-          <span class="deal-tag">Purchase · Retail</span>
-          <h3>Thrift to Thrive</h3>
-          <p class="deal-amt">$3,500,000</p>
-          <p class="deal-meta">Phoenix, AZ</p>
-          <span class="deal-view-btn">View Detail →</span>
-        </div>
-      </article>
+      <!-- Thrift to Thrive removed per Kevin — kept in track record -->
+
     </div>
   </div>
 </section>
@@ -239,7 +232,7 @@
 <div class="deal-modal-overlay" id="modal-thrift" onclick="if(event.target===this)closeDealModal()">
   <div class="deal-modal">
     <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
-    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Thrift%20Thrive.jpg')"></div>
+    <div class="deal-modal-img" style="background-image: url('assets/deals/thrift-thrive.jpg')"></div>
     <div class="deal-modal-body">
       <span class="deal-tag">Purchase · Retail</span>
       <h2>Thrift to Thrive</h2>
@@ -254,7 +247,7 @@
 <div class="deal-modal-overlay" id="modal-cotton-buy" onclick="if(event.target===this)closeDealModal()">
   <div class="deal-modal">
     <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
-    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/Cotten%20Center.jpeg')"></div>
+    <div class="deal-modal-img" style="background-image: url('assets/deals/cotten-center.jpg')"></div>
     <div class="deal-modal-body">
       <span class="deal-tag">Purchase · Industrial</span>
       <h2>Cotton Flex Center</h2>
@@ -269,7 +262,7 @@
 <div class="deal-modal-overlay" id="modal-kyrene" onclick="if(event.target===this)closeDealModal()">
   <div class="deal-modal">
     <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
-    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/unknowns/Kyrene%20Village.png')"></div>
+    <div class="deal-modal-img" style="background-image: url('assets/deals/kyrene-village.jpg')"></div>
     <div class="deal-modal-body">
       <span class="deal-tag">Sale · Retail</span>
       <h2>Kyrene Village</h2>
@@ -284,7 +277,7 @@
 <div class="deal-modal-overlay" id="modal-lifestorage-sale" onclick="if(event.target===this)closeDealModal()">
   <div class="deal-modal">
     <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
-    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/DJI_0018.jpg')"></div>
+    <div class="deal-modal-img" style="background-image: url('assets/deals/dji-aerial.jpg')"></div>
     <div class="deal-modal-body">
       <span class="deal-tag">Sale · Storage</span>
       <h2>Life Storage</h2>
@@ -299,7 +292,7 @@
 <div class="deal-modal-overlay" id="modal-rezide-sale" onclick="if(event.target===this)closeDealModal()">
   <div class="deal-modal">
     <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
-    <div class="deal-modal-img" style="background-image: url('assets/property%20pics/rezide_edited_edited.jpg')"></div>
+    <div class="deal-modal-img" style="background-image: url('assets/deals/rezide-uptown.jpg')"></div>
     <div class="deal-modal-body">
       <span class="deal-tag">Sale · Multifamily</span>
       <h2>Rezide Uptown</h2>
@@ -321,7 +314,7 @@
 </section>
 
 <div id="site-footer"></div>
-<script src="partials.js?v=12" defer></script>
+<script src="partials.js?v=13" defer></script>
 <script>
 function openDealModal(id){var m=document.getElementById('modal-'+id);if(!m)return;m.classList.add('is-open');document.body.style.overflow='hidden';}
 function closeDealModal(){document.querySelectorAll('.deal-modal-overlay').forEach(function(m){m.classList.remove('is-open');});document.body.style.overflow='';}

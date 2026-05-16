@@ -1,9 +1,12 @@
 .DS_Store
 Tombestone Details/
 serve.sh
+serve.py
 .claude/
 *.xlsm
 *.xlsx
 node_modules/
 **/.DS_Store
 .vercel
+_archive/
+scripts/

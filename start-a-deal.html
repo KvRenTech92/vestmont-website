@@ -27,13 +27,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css?v=120" />
 </head>
 <body>
 
 <div id="site-header"></div>
 
-<section class="page-hero" style="background-image: url('assets/flow pics/Conference_table_with_documents_…_202605081447.jpeg')">
+<section class="page-hero" style="background-image: url('assets/heroes/conference-table.jpg')">
   <div class="page-hero-overlay"></div>
   <div class="container page-hero-inner">
     <p class="eyebrow light">Start a Deal</p>
@@ -78,33 +78,40 @@
         <p><strong>Hours</strong><br/>Mon–Fri · 8am–6pm MST</p>
       </div>
     </div>
-    <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — we\'ll be in touch within 24 hours.');">
+    <form class="contact-form" action="https://formspree.io/f/xlgzqwby" method="POST">
       <div class="form-row">
-        <label>First Name<input type="text" required /></label>
-        <label>Last Name<input type="text" required /></label>
+        <label>First Name<input type="text" name="first_name" required /></label>
+        <label>Last Name<input type="text" name="last_name" required /></label>
       </div>
       <div class="form-row">
-        <label>Email<input type="email" required /></label>
-        <label>Phone<input type="tel" /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Phone<input type="tel" name="phone" /></label>
       </div>
-      <label>Firm / Company<input type="text" /></label>
+      <label>Firm / Company<input type="text" name="company" /></label>
       <label>What do you need?
-        <select>
+        <select name="service_type">
           <option>Capital Markets — Debt</option>
           <option>Capital Markets — Equity</option>
           <option>Investment Sales — Disposition</option>
           <option>Investment Sales — Acquisition</option>
-          <option>Project Advisory</option>
-          <option>Joint Venture / Co-Development</option>
+          <option>Development Advisory</option>
+          <option>Development &amp; Co-Development</option>
         </select>
       </label>
-      <label>Tell us about the deal<textarea rows="5" placeholder="Asset class, location, size, timing, capital stack, and what you need from us."></textarea></label>
+      <label>Tell us about the deal<textarea rows="5" name="deal_details" placeholder="Asset class, location, size, timing, capital stack, and what you need from us."></textarea></label>
+      <input type="hidden" name="_subject" value="New Deal Submission — Vestmont.com" />
+      <input type="hidden" name="_next" value="https://vestmont.com/start-a-deal.html?sent=1" />
       <button type="submit" class="btn btn-primary">Submit Deal</button>
     </form>
+    <div id="form-success" style="display:none; text-align:center; padding:48px 0;">
+      <h3 style="font-family:'Fraunces',Georgia,serif; font-size:1.4rem; color:var(--brand-ink); margin-bottom:12px;">Deal received.</h3>
+      <p style="color:#6b7280;">We'll review and respond within 24 hours.</p>
+    </div>
+    <script>if(window.location.search.includes('sent=1')){document.querySelector('.contact-form').style.display='none';document.getElementById('form-success').style.display='block';}</script>
   </div>
 </section>
 
 <div id="site-footer"></div>
-<script src="partials.js?v=12" defer></script>
+<script src="partials.js?v=13" defer></script>
 </body>
 </html>
