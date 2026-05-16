@@ -1284,8 +1284,10 @@ h1.light em { color: var(--brand-light); }
   .nav-links.open { opacity: 1; visibility: visible; }
   .nav-links a {
     padding: 16px 0;
-    font-size: 1.5rem;
-    letter-spacing: 0.04em;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
     border-bottom: none;
     color: rgba(255,255,255,0.85);
     text-align: center;
@@ -1372,8 +1374,8 @@ h1.light em { color: var(--brand-light); }
   /* Hero */
   .hero-video { height: calc(100svh - 120px); min-height: 420px; padding-bottom: 40px; }
   .hero-inner { max-width: 100%; }
-  .hero-cta { flex-direction: column; gap: 12px; }
-  .hero-cta .btn { width: 100%; text-align: center; justify-content: center; }
+  .hero-cta { flex-direction: column; gap: 12px; align-items: flex-start; }
+  .hero-cta .btn { width: auto; }
   .hero-scroll { display: none; }
   .eyebrow { font-size: 0.65rem; letter-spacing: 0.22em; margin-bottom: 16px; }
 
