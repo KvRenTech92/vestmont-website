@@ -14,7 +14,7 @@
 <header class="nav${isHome ? '' : ' nav-solid'}">
   <div class="container nav-inner">
     <a href="${base}index.html" class="logo-mark" aria-label="Vestmont — Home">
-      <img src="${base}assets/vestmont-logo-white.png" alt="Vestmont" style="height:40px;width:auto;object-fit:contain;" />
+      <img src="${base}assets/logos/vestmont-logo-white.png" alt="Vestmont" style="height:40px;width:auto;object-fit:contain;" />
     </a>
     <nav class="nav-links" id="nav-links">
       <button class="nav-close" id="nav-close" aria-label="Close menu">&times;</button>
@@ -40,7 +40,7 @@
   <div class="container footer-inner">
     <div>
       <a href="${base}index.html" class="logo-mark on-dark" style="margin-bottom:16px;display:inline-block;">
-        <img src="${base}assets/vestmont-logo-white.png" alt="Vestmont" style="height:50px;width:auto;object-fit:contain;" />
+        <img src="${base}assets/logos/vestmont-logo-white.png" alt="Vestmont" style="height:50px;width:auto;object-fit:contain;" />
       </a>
       <p class="footer-tag">Commercial Real Estate, Simplified.</p>
       <p class="footer-address">Phoenix &middot; Arizona<br/>info@vestmont.com</p>
