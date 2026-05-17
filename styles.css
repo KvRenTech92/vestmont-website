@@ -1285,10 +1285,10 @@ h1.light em { color: var(--brand-light); }
   }
   .nav-links.open { opacity: 1; visibility: visible; }
   .nav-links a {
-    padding: 14px 0;
+    padding: 12px 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 300;
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     letter-spacing: 0.03em;
     border-bottom: none;
     color: rgba(255,255,255,0.7);
@@ -1297,16 +1297,46 @@ h1.light em { color: var(--brand-light); }
   }
   .nav-links a:hover { color: #fff; }
   .nav-links a::after { display: none; }
+  .nav-dropdown-toggle {
+    padding: 12px 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+    color: rgba(255,255,255,0.7);
+    background: none; border: none; cursor: pointer;
+    text-align: left; width: auto;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .nav-dropdown-toggle:hover { color: #fff; }
+  .nav-arrow {
+    font-size: 0.7rem;
+    transition: transform 0.25s ease;
+    display: inline-block;
+  }
+  .nav-dropdown-toggle.open .nav-arrow { transform: rotate(180deg); }
+  .nav-dropdown {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 20px;
+  }
+  .nav-dropdown.open { max-height: 200px; }
+  .nav-dropdown a {
+    padding: 8px 0 !important;
+    font-size: 0.95rem !important;
+    color: rgba(255,255,255,0.5) !important;
+  }
+  .nav-dropdown a:hover { color: #fff !important; }
   .nav-mobile-divider {
     width: 40px;
     height: 1px;
     background: rgba(255,255,255,0.15);
-    margin: 8px 0;
+    margin: 6px 0;
   }
   .nav-cta {
-    margin-top: 8px; text-align: left;
-    padding: 14px 0 !important;
-    font-size: 1.35rem !important;
+    margin-top: 6px; text-align: left;
+    padding: 12px 0 !important;
+    font-size: 1.1rem !important;
     font-weight: 300 !important;
     background: none !important;
     border: none !important;

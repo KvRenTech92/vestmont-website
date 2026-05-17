@@ -21,9 +21,12 @@
       <a href="${base}index.html" class="nav-mobile-link">Home</a>
       <div class="nav-mobile-divider"></div>
       ${link('about.html', 'About')}
-      ${link('capital.html', 'Capital')}
-      ${link('investment-sales.html', 'Brokerage')}
-      ${link('advisory.html', 'Advisory')}
+      <button class="nav-dropdown-toggle" id="nav-svc-toggle">Services <span class="nav-arrow">&#9662;</span></button>
+      <div class="nav-dropdown" id="nav-svc-dropdown">
+        ${link('capital.html', 'Capital')}
+        ${link('investment-sales.html', 'Brokerage')}
+        ${link('advisory.html', 'Advisory')}
+      </div>
       ${link('track-record.html', 'Track Record')}
       ${link('insights.html', 'Insights')}
       ${link('contact.html', 'Contact')}
@@ -88,6 +91,9 @@
   navClose.addEventListener('click', closeNav);
   backdrop.addEventListener('click', closeNav);
   links.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+  const svcToggle = document.getElementById('nav-svc-toggle');
+  const svcDropdown = document.getElementById('nav-svc-dropdown');
+  svcToggle.addEventListener('click', () => { svcToggle.classList.toggle('open'); svcDropdown.classList.toggle('open'); });
 
   // Nav hide/show on scroll
   const nav = document.querySelector('.nav');
