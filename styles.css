@@ -1542,9 +1542,10 @@ h1.light em { color: var(--brand-light); }
   #vm-rates .vm-value { font-size: 16px; }
   #vm-rates .vm-label { font-size: 9px; }
 
-  /* Buttons */
-  .btn { padding: 0; font-size: 0.88rem; }
+  /* Buttons — keep underline to text width only */
+  .btn { padding: 0; font-size: 0.88rem; width: fit-content; display: inline-flex; }
   .btn-primary { padding: 0; }
+  .cta-inner .btn { margin: 0 auto; }
   .portfolio-head { flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 32px; }
 
   /* Filter bar */
