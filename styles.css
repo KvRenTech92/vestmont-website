@@ -185,6 +185,7 @@ em { font-style: italic; color: var(--brand-light); }
   z-index: 10001;
 }
 .nav-close:hover { color: #fff; }
+.nav-mobile-link { display: none; }
 .nav-mobile-divider { display: none; }
 
 /* ---------- Hero ---------- */
@@ -1298,6 +1299,7 @@ h1.light em { color: var(--brand-light); }
   }
   .nav-links a:hover { color: #fff; }
   .nav-links a::after { display: none; }
+  .nav-mobile-link { display: block; }
   .nav-mobile-divider {
     width: 40px;
     height: 1px;
