@@ -49,7 +49,7 @@
       <div>
         <p class="footer-h">Services</p>
         <a href="${base}capital.html">Capital</a>
-        <a href="${base}investment-sales.html">Investment Sales</a>
+        <a href="${base}investment-sales.html">Brokerage</a>
         <a href="${base}advisory.html">Advisory</a>
       </div>
       <div>
