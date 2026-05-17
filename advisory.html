@@ -224,14 +224,6 @@
         </div>
       </div>
 
-      <div class="rezide-stats">
-        <div class="rezide-stat"><span class="rezide-stat-label">Acquisition</span><span class="rezide-stat-value">$3.2M</span><span class="rezide-stat-sub">$91,429 / unit</span></div>
-        <div class="rezide-stat"><span class="rezide-stat-label">Renovation</span><span class="rezide-stat-value">$921K</span><span class="rezide-stat-sub">$26,314 / unit</span></div>
-        <div class="rezide-stat"><span class="rezide-stat-label">Total Basis</span><span class="rezide-stat-value">$4.1M</span><span class="rezide-stat-sub">$117,762 / unit</span></div>
-        <div class="rezide-stat"><span class="rezide-stat-label">Disposition</span><span class="rezide-stat-value">$6.3M</span><span class="rezide-stat-sub">$179,971 / unit</span></div>
-        <div class="rezide-stat"><span class="rezide-stat-label">Rent Increase</span><span class="rezide-stat-value">68%</span><span class="rezide-stat-sub">$790 → $1,325 / mo</span></div>
-      </div>
-
       <div class="ba-collage">
         <div class="ba-side">
           <h3 class="ba-label">Before — Bethany Gardens</h3>
@@ -253,6 +245,14 @@
             <img src="assets/rezide-ba/3-dining-kitchen.jpeg" alt="Mid-Century Modern dining and kitchen" />
           </div>
         </div>
+      </div>
+
+      <div class="rezide-stats">
+        <div class="rezide-stat"><span class="rezide-stat-label">Acquisition</span><span class="rezide-stat-value">$3.2M</span><span class="rezide-stat-sub">$91,429 / unit</span></div>
+        <div class="rezide-stat"><span class="rezide-stat-label">Renovation</span><span class="rezide-stat-value">$921K</span><span class="rezide-stat-sub">$26,314 / unit</span></div>
+        <div class="rezide-stat"><span class="rezide-stat-label">Total Basis</span><span class="rezide-stat-value">$4.1M</span><span class="rezide-stat-sub">$117,762 / unit</span></div>
+        <div class="rezide-stat"><span class="rezide-stat-label">Disposition</span><span class="rezide-stat-value">$6.3M</span><span class="rezide-stat-sub">$179,971 / unit</span></div>
+        <div class="rezide-stat"><span class="rezide-stat-label">Rent Increase</span><span class="rezide-stat-value">68%</span><span class="rezide-stat-sub">$790 → $1,325 / mo</span></div>
       </div>
 
       <div class="adv-phases">
@@ -280,19 +280,21 @@
 .adv-case-stat-label { font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: #9ca3af; }
 .adv-case-desc { font-size: 0.95rem; color: #6b7280; line-height: 1.7; margin-bottom: 32px; max-width: 860px; }
 
-/* Case study phase cards — medium blue */
+/* Case study phase cards — white with gold border */
 .adv-phases { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 32px; }
-.adv-case .adv-phase { padding: 24px 20px; background: linear-gradient(135deg, #2d3a4d 0%, #374558 100%); border-radius: 0; border: 1px solid rgba(255,255,255,0.08); }
-.adv-case .adv-phase-num { font-size: 0.8rem; margin-bottom: 10px; }
-.adv-case .adv-phase h4 { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 1rem; color: #fff; margin-bottom: 8px; }
-.adv-case .adv-phase p { font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.5; }
+.adv-case .adv-phase { padding: 24px 20px; background: #fff; border: 1px solid #e5e7eb; border-left: 3px solid #C5A572; transition: all 0.35s var(--ease); }
+.adv-case .adv-phase:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+.adv-case .adv-phase-num { font-size: 0.8rem; margin-bottom: 10px; color: var(--brand-light); }
+.adv-case .adv-phase h4 { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 1rem; color: var(--brand-ink); margin-bottom: 8px; }
+.adv-case .adv-phase p { font-size: 0.82rem; color: #6b7280; line-height: 1.5; }
 
-/* Rezide Stats */
+/* Rezide Stats — white with gold border */
 .rezide-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 32px; }
-.rezide-stat { text-align: center; padding: 24px 12px; background: linear-gradient(135deg, #2d3a4d 0%, #374558 100%); border-radius: 0; border: 1px solid rgba(255,255,255,0.08); }
+.rezide-stat { text-align: center; padding: 24px 12px; background: #fff; border: 1px solid #e5e7eb; border-left: 3px solid #C5A572; transition: all 0.35s var(--ease); }
+.rezide-stat:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
 .rezide-stat-label { display: block; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--brand-light); margin-bottom: 6px; }
-.rezide-stat-value { display: block; font-family: 'Fraunces', Georgia, serif; font-size: 1.5rem; font-weight: 600; color: #fff; margin-bottom: 2px; }
-.rezide-stat-sub { display: block; font-size: 0.75rem; color: rgba(255,255,255,0.45); }
+.rezide-stat-value { display: block; font-family: 'Fraunces', Georgia, serif; font-size: 1.5rem; font-weight: 600; color: var(--brand-ink); margin-bottom: 2px; }
+.rezide-stat-sub { display: block; font-size: 0.75rem; color: #6b7280; }
 
 /* Before/After Collage */
 .ba-collage { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
