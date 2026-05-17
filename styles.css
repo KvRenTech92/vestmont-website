@@ -1297,36 +1297,6 @@ h1.light em { color: var(--brand-light); }
   }
   .nav-links a:hover { color: #fff; }
   .nav-links a::after { display: none; }
-  .nav-dropdown-toggle {
-    padding: 12px 0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 300;
-    font-size: 1.1rem;
-    letter-spacing: 0.03em;
-    color: rgba(255,255,255,0.7);
-    background: none; border: none; cursor: pointer;
-    text-align: left; width: auto;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .nav-dropdown-toggle:hover { color: #fff; }
-  .nav-arrow {
-    font-size: 0.7rem;
-    transition: transform 0.25s ease;
-    display: inline-block;
-  }
-  .nav-dropdown-toggle.open .nav-arrow { transform: rotate(180deg); }
-  .nav-dropdown {
-    max-height: 0; overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding-left: 20px;
-  }
-  .nav-dropdown.open { max-height: 200px; }
-  .nav-dropdown a {
-    padding: 8px 0 !important;
-    font-size: 0.95rem !important;
-    color: rgba(255,255,255,0.5) !important;
-  }
-  .nav-dropdown a:hover { color: #fff !important; }
   .nav-mobile-divider {
     width: 40px;
     height: 1px;
