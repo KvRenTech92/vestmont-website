@@ -126,8 +126,8 @@ em { font-style: italic; color: var(--brand-light); }
   display: flex; gap: 28px; align-items: center;
 }
 .nav-links a {
-  font-size: 0.82rem; font-weight: 500; color: rgba(255,255,255,0.75);
-  letter-spacing: 0.03em;
+  font-size: 0.7rem; font-weight: 600; color: rgba(255,255,255,0.75);
+  letter-spacing: 0.12em; text-transform: uppercase;
   transition: color 0.25s var(--ease);
   position: relative;
   white-space: nowrap;
