@@ -147,11 +147,11 @@ em { font-style: italic; color: var(--brand-light); }
   color: #C5A572 !important;
   padding: 0;
   border-radius: 0;
-  font-size: 0.82rem !important;
-  font-weight: 500;
+  font-size: 0.7rem !important;
+  font-weight: 600;
   transition: color 0.3s var(--ease);
-  letter-spacing: 0.03em;
-  text-transform: none;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 .nav-cta::after { display: none !important; }
 .nav-cta:hover {
