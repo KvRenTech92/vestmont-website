@@ -126,8 +126,8 @@ em { font-style: italic; color: var(--brand-light); }
   display: flex; gap: 28px; align-items: center;
 }
 .nav-links a {
-  font-size: 0.7rem; font-weight: 600; color: rgba(255,255,255,0.75);
-  letter-spacing: 0.12em; text-transform: uppercase;
+  font-size: 0.84rem; font-weight: 500; color: rgba(255,255,255,0.75);
+  letter-spacing: 0.02em; text-transform: none;
   transition: color 0.25s var(--ease);
   position: relative;
   white-space: nowrap;
@@ -147,11 +147,11 @@ em { font-style: italic; color: var(--brand-light); }
   color: #C5A572 !important;
   padding: 0;
   border-radius: 0;
-  font-size: 0.7rem !important;
-  font-weight: 600;
+  font-size: 0.84rem !important;
+  font-weight: 500;
   transition: color 0.3s var(--ease);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 .nav-cta::after { display: none !important; }
 .nav-cta:hover {
