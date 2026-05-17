@@ -1497,7 +1497,7 @@ h1.light em { color: var(--brand-light); }
   .contact-form input,
   .contact-form textarea,
   .contact-form select { padding: 12px 14px; font-size: 16px; }
-  .contact-form button { width: 100%; }
+  .contact-form button { width: fit-content; }
 
   /* Footer */
   .footer { padding: 56px 0 32px; }
@@ -1540,7 +1540,7 @@ h1.light em { color: var(--brand-light); }
   /* Inline form (newsletter CTA) */
   .inline-form { flex-direction: column; }
   .inline-form input { min-width: 100%; }
-  .inline-form .btn { width: 100%; }
+  .inline-form .btn { width: fit-content; }
 }
 
 /* ---------- Touch-friendly taps ---------- */
