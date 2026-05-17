@@ -22,4 +22,9 @@ Tombestone Details/
 **/.DS_Store
 .claude/
 serve.sh
+serve.py
 _archive/
+CLAUDE.md
+scripts/
+*.xlsx
+*.xlsm
