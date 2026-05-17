@@ -394,12 +394,13 @@ h1.light em { color: var(--brand-light); }
 .brochure-link {
   display: inline-flex; align-items: center; gap: 8px;
   margin-top: 24px; padding: 12px 20px;
-  background: linear-gradient(135deg, #4a5568 0%, #5a6a7a 100%); color: #fff;
+  background: transparent; color: #C5A572;
+  border: 1.5px solid #C5A572;
   font-size: 0.88rem; font-weight: 600; letter-spacing: 0.3px;
-  text-decoration: none; border-radius: 6px;
+  text-decoration: none; border-radius: 0;
   transition: all 0.3s var(--ease);
 }
-.brochure-link:hover { background: linear-gradient(135deg, #556270 0%, #667788 100%); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+.brochure-link:hover { background: #C5A572; color: #fff; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(197,165,114,0.25); }
 .brochure-link svg { flex-shrink: 0; }
 .section-lede {
   color: var(--muted); font-size: 1.08rem;
