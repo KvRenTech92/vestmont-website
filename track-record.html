@@ -143,6 +143,22 @@
         </div>
       </div>
 
+      <div class="deal-modal-overlay" id="modal-x-sloans" onclick="if(event.target===this)closeDealModal()">
+        <div class="deal-modal">
+          <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
+          <div class="deal-modal-img" style="background-image: url('assets/deals/x-at-sloans.jpg')"></div>
+          <div class="deal-modal-body">
+            <span class="deal-tag">Advisory · Apartments</span>
+            <h2>X @ Sloan's</h2>
+            <p class="deal-amt">$31,000,000</p>
+            <p class="deal-meta">Denver, Colorado</p>
+            <table class="deal-details"><tr><td>Property Type</td><td>Multifamily</td></tr><tr><td>Units</td><td>104</td></tr><tr><td>Engagement</td><td>Property Advisory &amp; Management Onboarding</td></tr></table>
+            <p class="deal-prose">Vestmont Capital provided property advisory services for X @ Sloan's, a 104-unit luxury apartment community in Denver, Colorado. Scope included financial performance analysis, rent optimization, unit mix strategy, tenant retention programs, marketing analysis, and KPI monitoring. Additionally engaged to advise on the onboarding of a new management company.</p>
+            <p class="deal-disclaimer">Advisory services provided by Vestmont Capital Inc.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="deal-modal-overlay" id="modal-lifestorage-sale" onclick="if(event.target===this)closeDealModal()">
         <div class="deal-modal">
           <button class="deal-modal-close" onclick="closeDealModal()">✕</button>
@@ -662,6 +678,17 @@
           <h3>Apache Palms</h3>
           <p class="deal-amt">$37,200,000</p>
           <p class="deal-meta">Tempe, AZ</p>
+          <span class="deal-view-btn">View Detail →</span>
+        </div>
+      </article>
+
+      <article class="deal" data-cat="multifamily" onclick="openDealModal('x-sloans')">
+        <div class="deal-img" style="background-image: url('assets/deals/x-at-sloans.jpg')"></div>
+        <div class="deal-body">
+          <span class="deal-tag">Advisory · Apartments</span>
+          <h3>X @ Sloan's</h3>
+          <p class="deal-amt">$31,000,000</p>
+          <p class="deal-meta">Denver, CO</p>
           <span class="deal-view-btn">View Detail →</span>
         </div>
       </article>
